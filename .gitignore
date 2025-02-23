@@ -1,0 +1,11 @@
+# macOSのシステムファイル
+.DS_Store
+
+# CSSディレクトリ内の.DS_Storeファイル
+css/.DS_Store
+
+# 画像ディレクトリ内の.DS_Storeファイル
+img/.DS_Store
+
+# vscodeの設定ファイル
+.vscode

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>会社HP</title>
+  <!-- 日本語用 noto sans jp -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- 日本語用 Shippori Mincho jp -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- 日本語用 M PLUS Rounded 1c -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <!-- 英語用 Oswald -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <!-- 英語用 montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="/img/ロゴ.png">
+  <link rel="stylesheet" href="/css/reset.css">
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQueryの読み込み -->
+  <style>
+    /* footerにpositionとz-indexを設定 */
+    footer {
+      position: relative; /* 必須 */
+      z-index: 10; /* 他の要素より前面に表示されます */
+      background-color: lightgray;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- ******************************* header ******************************* -->
+  <header class="sub-page-header">
+    <div class="header__logo">
+      <a href="./home.html"><img src="/img/ロゴ_PNG.webp" alt="会社ロゴ"></a>
+    </div>
+    <button class="hum-btn btn__open-trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <h1 class="page-title">Contact</h1>
+    <nav class="header__nav">
+      <div class="header__nav--wrap">
+        <div class="header__nav--left">
+          <p>有限会社 田里興業</p>
+        </div>
+        <div class="header__nav--img">
+          <img src="./img/chouhoukei.webp" alt="">
+        </div>
+        <div class="header__nav--right">
+          <ul class="header__nav--list">
+            <li class="header__nav--item"><a href="./about.html">About</a></li>
+            <li class="header__nav--item"><a href="./works.html">Works</a></li>
+            <li class="header__nav--item"><a href="./recruit.html">Recruit</a></li>
+            <li class="header__nav--item"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="btn__close-trigger">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ***************** 【おためし】Noway Form ***************** -->
+   <section>
+     <div class="contact_inner">
+       <iframe style="border:none;width:100%;" height="400px" src="https://www.noway-form.com/f/ba978380-6baf-43ca-9ad3-5040c98e4d71/embed" />
+     </div>
+   </section>
+
+
+  <!-- ******************************* footer ******************************* -->
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__li"><a href="./about.html">About</a></li>
+      <li class="footer__li"><a href="works.html">Works</a></li>
+      <li class="footer__li"><a href="./recruit.html">Recruit</a></li>
+      <li class="footer__li"><a href="./contact.html">Contact</a></li>
+      <li class="footer__li"><a href="./privacy-policy.html">Privacy policy</a></li>
+    </ul>
+  </footer>
+<script src="./js/script.js"></script>
+</body>
+</html>

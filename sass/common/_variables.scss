@@ -1,0 +1,28 @@
+html {
+  /* clampの設定に対する警告は無視してOK */
+  font-size: clamp(62.5%, 1.5vw, 100%);
+}
+
+
+$font-family-ja: "Noto Sans JP", sans-serif;
+$font-family-en: "Montserrat", sans-serif;
+// $section-title__font-family: "Shippori Mincho", serif;
+// $section-title__font-family: "Oswald", sans-serif;
+
+$font-size-base_sp: 1.5rem;
+$font-size-base_pc: 1.6rem;
+$line-height-base: 2;
+$color-base: #333;
+$weight-base: 300;
+$letter-spacing-base: 0.05rem;
+
+$background-base: #FFFFFF;
+$width-inner: 1280px;
+
+$breakpoints: (
+  sp: "screen and (max-width: 767px)",
+  pc: "screen and (min-width: 768px)",
+  pc-max: "screen and (min-width: 1400px)"
+);
+
+

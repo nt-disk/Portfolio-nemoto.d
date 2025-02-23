@@ -1,0 +1,367 @@
+// @use './variables' as *;
+@use "./mixins" as *;
+// @forward './variables';
+// @forward './mixins';
+
+// *************************** all ***************************
+
+body {
+  font-size: $font-size-base_sp;
+  font-weight: $weight-base;
+  line-height: $line-height-base;
+  color: $color-base;
+  font-family: $font-family-ja;
+  background-color: $background-base;
+  letter-spacing: $letter-spacing-base;
+
+  @include mq(pc) {
+    font-size: $font-size-base_pc;
+  }
+
+  p {
+    font-weight: $weight-base;
+    // letter-spacing: $letter-spacing-base;
+  }
+
+  dt,
+  dd {
+    font-weight: $weight-base;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+button {
+  color: #000;
+}
+
+// *************************** header ***************************
+.header {
+  height: 65px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 150;
+}
+
+.header__company-info {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 8px;
+  left: 12px;
+  gap: 4px;
+
+  .header__company-name {
+    font-family: serif;
+    font-size: 15px;
+  }
+}
+
+.header__logo {
+  // 高さ位置調整
+  width: 55px;
+  z-index: 3;
+
+  @include mq(pc) {
+    top: 30px;
+    left: 30px;
+    width: 80px;
+  }
+}
+
+.header__hum-btn {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 22px;
+  right: 13px;
+  z-index: 10;
+  cursor: pointer;
+  gap: 10px;
+  // padding: ;
+
+  span {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    display: block;
+    transition: width 0.5s;
+  }
+
+  @include mq(pc) {
+    width: 70px;
+    top: 46px;
+    right: 38px;
+    gap: 15px;
+
+    &:hover {
+      span:nth-of-type(1) {
+        width: 90%;
+      }
+      span:nth-of-type(2) {
+        width: 70%;
+      }
+      span:nth-of-type(3) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+// *************************** sub-page-header ***************************
+.sub-page-header {
+  // width: 390px;
+  height: 180px;
+  background: #efefef;
+  // background-color: #ff0000;
+
+  @include mq(pc) {
+    height: 410px;
+  }
+}
+
+/*=============================
+ナビゲーション
+=============================*/
+
+.nav {
+  display: none;
+  // ヘッダーの高さ分、マイナスを指定して調整
+  height: calc(100vh - 65px);
+  width: 100vw;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: fixed;
+  z-index: 10;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 230, 137);
+}
+
+// ハンバーガーメニューが押されるとopenが付与され、以下のスタイルがあたる
+.nav.open {
+  display: flex;
+  opacity: 1;
+  z-index: 10;
+}
+
+.nav__container {
+  // background-color: #e6e6e6;
+  background-color: #ffffffb6;
+  display: flex;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include mq(pc) {
+    position: relative; //閉じるボタンの位置指定のため
+    flex-direction: row;
+    width: calc(100% - 120px);
+    height: calc(100% - 120px);
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 30px;
+    // border-radius: 15px;
+  }
+
+  @include mq(pc-max) {
+    justify-content: center;
+    gap: 120px;
+  }
+}
+
+.nav__left {
+  display: flex;
+  justify-content: center;
+
+  border-top: 1px solid #333;
+  padding-top: 20px;
+
+  p {
+    font-weight: 200;
+  }
+
+  @include mq(pc) {
+    width: 30%;
+    border-top: none;
+    p {
+      font-size: 18px;
+      font-weight: 250;
+    }
+  }
+
+  @include mq(pc-max) {
+    width: auto;
+    font-size: 20px;
+  }
+}
+
+.nav__img {
+  display: none;
+
+  @include mq(pc) {
+    display: block;
+    width: 360px;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.nav__list-wrap {
+  // margin-bottom: 18px;
+
+  @include mq(pc) {
+    width: 30%;
+    margin-bottom: 0;
+  }
+  @include mq(pc-max) {
+    width: auto;
+  }
+}
+
+.nav-list {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.nav-item {
+  cursor: pointer;
+  a {
+    color: #060606;
+    font-weight: 200;
+    font-size: 18px;
+    padding: 1rem;
+
+    @include mq(pc) {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+}
+
+.nav__close-btn {
+  border-radius: 2rem;
+  border: 0.5px solid;
+  background: #ffffffb0;
+  box-shadow: 0 0.5em 0.5em -0.4em #bbbbba;
+  width: 40%;
+  text-align: center;
+  /* padding-top: 8px; */
+  padding: 0.5rem;
+  padding-top: 0.3rem;
+}
+
+// *************************** ページタイトル ***************************
+.page-title {
+  font-size: 36px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+
+  @include mq(pc) {
+    font-size: 100px;
+    top: 220px;
+    left: 80px;
+  }
+}
+
+// ******* sectionタイトル *************
+.section-title {
+  font-size: 30px;
+  font-family: $font-family-ja;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+// ******** サブページsection-title*********
+.sub-page__section-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  @include mq(pc) {
+    font-size: 32px;
+    margin-bottom: 42px;
+  }
+}
+
+// *********************** sp-inner ***********************
+// .sp-inner {
+//   @include sp-inner() {
+
+//   }
+//   @include mq(pc) {
+//   }
+// }
+
+// *************************** footer ***************************
+.footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #efefef;
+  // background: gold;
+  position: relative;
+
+  @include mq(pc) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.footer__ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+  @include mq(pc) {
+    // display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.8em;
+  }
+}
+
+.footer__li {
+  // line-height: 3.5;
+  a {
+    display: inline-block;
+    padding-bottom: 1px;
+    position: relative;
+    font-weight: 300;
+    line-height: 1;
+
+    &::after {
+      content: "";
+      bottom: 0;
+      display: block;
+      background-color: #000;
+      height: 1px;
+      left: 0;
+      position: absolute;
+      transition: 0.4s all;
+      width: 0;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+
+    @include mq(pc) {
+      font-weight: 200;
+    }
+  }
+}

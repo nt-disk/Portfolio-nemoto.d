@@ -1,0 +1,198 @@
+@use '../common/helper' as *;
+
+.about-page {
+  // .header {
+  //   // width: 390px;
+  //   height: 180px;
+  //   background: #EFEFEF;
+  //   // background-color: #ff0000;
+
+  //   @include mq(pc) {
+  //     height: 410px;
+  //   }
+  // }
+
+// *************************** greeting ***************************
+  .greeting {
+    padding-top: 45px;
+    padding-bottom: 63px;
+    @include mq(pc) {
+      padding-top: 170px;
+      padding-bottom: 100px;
+    }
+  }
+
+  .greeting__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    @include mq(pc) {
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 80px;
+    }
+  }
+
+  .greeting__wrap {
+    @include mq(pc) {
+      display: flex;
+      gap: 108px;
+      justify-content: center;
+    }
+  }
+
+  .greeting__txt {
+    margin-bottom: 14px;
+    @include mq(pc) {
+      width: 518px;
+      line-height: 2.5;
+    }
+  }
+
+  .greeting__img {
+    width: 196px;
+    height: 227px;
+    margin-left: auto;
+    position: relative;
+    @include mq(pc) {
+      width: 336px;
+      height: 390px;
+      margin-left: 0;
+    }
+
+    img {
+      position: absolute;
+      top: 5%;
+
+    }
+  }
+
+// *************************** company ***************************
+  .company {
+    padding-top: 63px;
+    @include mq(pc) {
+      padding-top: 100px;
+    }
+  }
+
+  .company__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 160px;
+    @include mq(pc) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+
+  .company__title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+    @include mq(pc) {
+      font-size: 32px;
+      margin-bottom: 42px;
+    }
+  }
+
+  .company__left-right {
+    @include mq(pc) {
+      display: flex;
+      justify-content: center;
+      gap: 70px;
+      padding-left: 50px;
+    }
+  }
+
+  .company__contents--wrap {
+    position: relative;
+  }
+
+  .company__item {
+    // width: inherit;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #000;
+      // bottom: 0;
+    }
+  }
+
+  dl {
+    display: flex;
+    // gap: 60px;
+  }
+
+  dt {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 120px;
+  }
+
+  dd {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .under-flower {
+    position: relative;
+
+
+    img {
+      width: 100%;
+      // 画像の位置を決めたい(映える位置にしたい)のだが、absoluteを設定するとfooterと被る(footerが上に上がってくる)ので無理やり位置を決める必要が出てくる。そのため改善したいが、現状みためにそこまでこだわっていないのでスルー。
+
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      transform: scale(1.5);
+      // right: 50%;
+      @include mq(pc) {
+        transform: scale(1);
+      }
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  tr {
+    border-bottom: gray 1px solid;
+  }
+
+  th {
+    text-align: left;
+    // padding: 18px 18px 18px 0px;
+    // width: 116px;
+    padding: 18px 0px;
+    font-weight: 300;
+  }
+
+  td {
+    width: auto;
+    padding: 18px 0px;
+    padding-left: 36px;
+    font-weight: 300;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,15 @@
+@use 'sass:map';
+@use 'variables' as *;
+@forward 'variables';
+
+
+@mixin mq($breakpoint: pc) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// @mixin sp-padding($left: 30px, $right: 30px) {
+//   padding-left: $left;
+//   padding-right: $right;
+// }

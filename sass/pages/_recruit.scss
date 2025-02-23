@@ -1,0 +1,212 @@
+@use '../common/mixins' as *;
+
+.recruit-page {
+  .recruit {
+    padding-top: 60px;
+    padding-bottom: 32px;
+    @include mq(pc) {
+      padding-top: 170px;
+      padding-bottom: 100px;
+    }
+  }
+
+  .recruit__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .recruit__txt {
+    letter-spacing: 0em;
+    text-align: justify; /* 両端揃え */
+  }
+
+
+// ********** job-description **********
+  .job-description {
+    padding-top: 32px;
+    padding-bottom: 100px;
+    font-size: 14px;
+  }
+
+  .job-description__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .job-description__list--lv-1st {
+
+  }
+
+  .job-description__item {
+    position: relative;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 0.5px;
+      width: 100%;
+      background-color: #000;
+    }
+  }
+
+  .job-description__item--title {
+    flex: 0 0 110px;
+  }
+
+  .job-description__list--lv2nd {
+    flex: 1;
+    /* 残りのスペースを占有 */
+    // 明示的に設定
+  }
+
+  li, h3, h4 {
+    font-weight: 300;
+  }
+
+  .plus-margin {
+    margin-bottom: 15px;
+  }
+
+  main {
+    // position: relative;
+  }
+
+  .flower-wall {
+    position: relative;
+    img {
+      // position: absolute;
+      // top: -30px;
+      // left: 0;
+      // z-index: 30;
+    }
+  }
+
+  // *************** qa ***************
+  .qa {
+    padding-top: 100px;
+    padding-bottom: 170px;
+  }
+
+  .qa__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .qa__item {
+    border: solid 1px #000;
+    border-radius: 6px;
+    margin-bottom: 16px;
+
+  }
+
+  .qa__head {
+    padding-top: 18px;
+    padding-bottom: 22px;
+    padding-left: 18px;
+    padding-right: 15px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+
+    &::before {
+      content: "Q";
+      font-weight: 500;
+      margin-right: 12px;
+      // position: absolute;
+
+    }
+
+    &::after {
+      content: "+";
+      font-size: 20px;
+      // border-top: 1px solid black;
+      // border-left: 1px solid black;
+      display: inline-block;
+      // width: 10px;
+      // height: 10px;
+      // transform: rotate(-135deg) translateY(9px);
+      position: absolute;
+      top: 13px;
+      right: 16px;
+
+      // top: 50%;
+
+      // transition: transform .4s;
+    }
+
+    // .is-open::after {
+    //   transform: rotate(45deg) translateY(-10px);
+    // }
+  }
+
+  .qa__body {
+    // padding-top: 18px;
+    padding-bottom: 22px;
+    padding-left: 18px;
+    padding-right: 15px;
+    width: 100%;
+    position: relative;
+    color: #fff;
+    background-color: #656565;
+
+    line-height: 0;
+    opacity: 0;
+    padding: 0;
+
+    // transition: line-height .3s, opacity .4s;
+
+    p {
+      padding-left: 18px;
+    }
+  }
+
+  .qa__body--wrap {
+    &::before {
+      content: "A";
+      font-weight: 500;
+      margin-right: 12px;
+      position: absolute;
+
+    }
+  }
+
+  .qa__item:nth-of-type(4) p:nth-of-type(2){
+    // margin-bottom: 12px;
+  }
+
+  .qa__head.is-open {
+    color: #fff;
+    background-color: #656565;
+  }
+
+  .qa__body.is-open {
+    padding: 0 20px 20px 20px;
+    // padding: 20px;
+    line-height: 1.5;
+    opacity: 1;
+  }
+
+  .qa__body.is-open.qa__item:nth-of-type(4) p:nth-of-type(2) {
+    margin-bottom: 12px;
+
+  }
+
+  .qa__head.is-open::after {
+    content: "-";
+    font-size: 32px;
+    color: #fff;
+    top: -2.5px;
+    right: 16px;
+  }
+
+
+
+
+
+
+}
