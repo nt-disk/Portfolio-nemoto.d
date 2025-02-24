@@ -1,16 +1,6 @@
 @use '../common/helper' as *;
 
 .about-page {
-  // .header {
-  //   // width: 390px;
-  //   height: 180px;
-  //   background: #EFEFEF;
-  //   // background-color: #ff0000;
-
-  //   @include mq(pc) {
-  //     height: 410px;
-  //   }
-  // }
 
 // *************************** greeting ***************************
   .greeting {
@@ -45,6 +35,7 @@
 
   .greeting__txt {
     margin-bottom: 14px;
+    text-align: justify;
     @include mq(pc) {
       width: 518px;
       line-height: 2.5;
