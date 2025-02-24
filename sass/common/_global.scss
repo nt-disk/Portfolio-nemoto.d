@@ -41,15 +41,20 @@ button {
 .header {
   height: 65px;
   background-color: white;
+  background-color: yellowgreen;
   position: sticky;
   top: 0;
   z-index: 150;
 }
 
+.header__container {
+  position: relative;
+}
+
 .header__company-info {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 8px;
   left: 12px;
   gap: 4px;
@@ -76,7 +81,7 @@ button {
   width: 30px;
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   top: 22px;
   right: 13px;
   z-index: 10;

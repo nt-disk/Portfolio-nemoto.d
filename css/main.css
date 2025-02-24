@@ -36,9 +36,14 @@ button {
 .header {
   height: 65px;
   background-color: white;
+  background-color: yellowgreen;
   position: sticky;
   top: 0;
   z-index: 150;
+}
+
+.header__container {
+  position: relative;
 }
 
 .header__company-info {
@@ -48,7 +53,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
+  position: absolute;
   top: 8px;
   left: 12px;
   gap: 4px;
@@ -79,7 +84,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: fixed;
+  position: absolute;
   top: 22px;
   right: 13px;
   z-index: 10;
