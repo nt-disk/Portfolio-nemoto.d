@@ -1286,7 +1286,7 @@ p img {
 }
 .about-page .company {
   padding-top: 63px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 @media screen and (min-width: 768px) {
   .about-page .company {
@@ -1435,12 +1435,9 @@ p img {
 .recruit-page .plus-margin {
   margin-bottom: 15px;
 }
-.recruit-page .flower-wall {
-  position: relative;
-}
 .recruit-page .qa {
   padding-top: 100px;
-  padding-bottom: 170px;
+  padding-bottom: 120px;
 }
 .recruit-page .qa__inner {
   padding-left: 30px;
