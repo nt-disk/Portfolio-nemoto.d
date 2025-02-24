@@ -42,23 +42,23 @@
     }
   }
 
-  .greeting__img {
-    width: 196px;
-    height: 227px;
-    margin-left: auto;
-    position: relative;
-    @include mq(pc) {
-      width: 336px;
-      height: 390px;
-      margin-left: 0;
-    }
+  // .greeting__img {
+  //   width: 196px;
+  //   height: 227px;
+  //   margin-left: auto;
+  //   position: relative;
+  //   @include mq(pc) {
+  //     width: 336px;
+  //     height: 390px;
+  //     margin-left: 0;
+  //   }
 
-    img {
-      position: absolute;
-      top: 5%;
+  //   img {
+  //     position: absolute;
+  //     top: 5%;
 
-    }
-  }
+  //   }
+  // }
 
 // *************************** company ***************************
   .company {
@@ -130,25 +130,6 @@
   dd {
     padding-top: 18px;
     padding-bottom: 18px;
-  }
-
-  .under-flower {
-    position: relative;
-
-
-    img {
-      width: 100%;
-      // 画像の位置を決めたい(映える位置にしたい)のだが、absoluteを設定するとfooterと被る(footerが上に上がってくる)ので無理やり位置を決める必要が出てくる。そのため改善したいが、現状みためにそこまでこだわっていないのでスルー。
-
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      transform: scale(1.5);
-      // right: 50%;
-      @include mq(pc) {
-        transform: scale(1);
-      }
-    }
   }
 
   table {

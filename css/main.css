@@ -1275,23 +1275,6 @@ p img {
     line-height: 2.5;
   }
 }
-.about-page .greeting__img {
-  width: 196px;
-  height: 227px;
-  margin-left: auto;
-  position: relative;
-}
-@media screen and (min-width: 768px) {
-  .about-page .greeting__img {
-    width: 336px;
-    height: 390px;
-    margin-left: 0;
-  }
-}
-.about-page .greeting__img img {
-  position: absolute;
-  top: 5%;
-}
 .about-page .company {
   padding-top: 63px;
 }
@@ -1362,20 +1345,6 @@ p img {
 .about-page dd {
   padding-top: 18px;
   padding-bottom: 18px;
-}
-.about-page .under-flower {
-  position: relative;
-}
-.about-page .under-flower img {
-  width: 100%;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-@media screen and (min-width: 768px) {
-  .about-page .under-flower img {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
 }
 .about-page table {
   border-collapse: collapse;
