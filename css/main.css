@@ -1234,8 +1234,7 @@ p img {
 }
 
 .about-page .greeting {
-  padding-top: 45px;
-  padding-bottom: 63px;
+  padding: 45px 0;
 }
 @media screen and (min-width: 768px) {
   .about-page .greeting {
@@ -1275,8 +1274,19 @@ p img {
     line-height: 2.5;
   }
 }
+.about-page .section-line {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about-page .section-line {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 .about-page .company {
   padding-top: 63px;
+  margin-bottom: 120px;
 }
 @media screen and (min-width: 768px) {
   .about-page .company {
@@ -1286,7 +1296,6 @@ p img {
 .about-page .company__inner {
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 160px;
 }
 @media screen and (min-width: 768px) {
   .about-page .company__inner {

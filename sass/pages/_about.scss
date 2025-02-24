@@ -4,8 +4,7 @@
 
 // *************************** greeting ***************************
   .greeting {
-    padding-top: 45px;
-    padding-bottom: 63px;
+    padding: 45px 0;
     @include mq(pc) {
       padding-top: 170px;
       padding-bottom: 100px;
@@ -42,27 +41,19 @@
     }
   }
 
-  // .greeting__img {
-  //   width: 196px;
-  //   height: 227px;
-  //   margin-left: auto;
-  //   position: relative;
-  //   @include mq(pc) {
-  //     width: 336px;
-  //     height: 390px;
-  //     margin-left: 0;
-  //   }
-
-  //   img {
-  //     position: absolute;
-  //     top: 5%;
-
-  //   }
-  // }
+  .section-line {
+    padding-left: 30px;
+    padding-right: 30px;
+    @include mq(pc) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
 
 // *************************** company ***************************
   .company {
     padding-top: 63px;
+    margin-bottom: 120px;
     @include mq(pc) {
       padding-top: 100px;
     }
@@ -71,7 +62,6 @@
   .company__inner {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 160px;
     @include mq(pc) {
       padding-left: 60px;
       padding-right: 60px;
