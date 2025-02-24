@@ -337,8 +337,8 @@ button {
 }
 
 .footer {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background: #efefef;
   position: relative;
 }
@@ -358,7 +358,10 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.8em;
+}
+.footer__ul small {
+  font-size: 1rem;
+  font-weight: 200;
 }
 @media screen and (min-width: 768px) {
   .footer__ul {

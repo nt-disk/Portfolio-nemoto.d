@@ -311,8 +311,8 @@ button {
 
 // *************************** footer ***************************
 .footer {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background: #efefef;
   // background: gold;
   position: relative;
@@ -327,7 +327,13 @@ button {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1.8em;
+  // gap: 1.8em;
+
+  small {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
   @include mq(pc) {
     // display: flex;
     flex-direction: row;
