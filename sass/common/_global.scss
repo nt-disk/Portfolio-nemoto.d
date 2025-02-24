@@ -144,7 +144,7 @@ button {
   // display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(249, 230, 137);
+  background-color: rgba(255, 255, 255, 0.94);
 }
 
 // ハンバーガーメニューが押されるとopenが付与され、以下のスタイルがあたる
@@ -155,11 +155,10 @@ button {
 }
 
 .nav__container {
-  // background-color: #e6e6e6;
-  background-color: #ffffffb6;
+  background-color: rgb(242, 241, 241);
   display: flex;
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
   flex-direction: column;
   align-items: center;
   justify-content: center;

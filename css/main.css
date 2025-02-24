@@ -134,7 +134,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgb(249, 230, 137);
+  background-color: rgba(255, 255, 255, 0.94);
 }
 
 .nav.open {
@@ -146,12 +146,12 @@ button {
 }
 
 .nav__container {
-  background-color: rgba(255, 255, 255, 0.7137254902);
+  background-color: rgb(242, 241, 241);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
