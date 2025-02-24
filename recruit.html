@@ -31,39 +31,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQueryの読み込み -->
   </head>
 <body class="recruit-page">
-  <header class="sub-page-header">
-    <div class="header__logo">
-      <a href="index.html"><img src="./img/logo.webp" alt="会社ロゴ"></a>
-    </div>
-    <button class="hum-btn btn__open-trigger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <h1 class="page-title">Recruit</h1>
-    <nav class="header__nav">
-      <div class="header__nav--wrap">
-        <div class="header__nav--left">
-          <p>有限会社 田里興業</p>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__company-info">
+        <div class="header__logo">
+          <a href="./index.html"><img src="./img/logo.webp" alt="会社ロゴ"></a>
         </div>
-        <div class="header__nav--img">
-          <img src="./img/chouhoukei.webp" alt="">
-        </div>
-        <div class="header__nav--right">
-          <ul class="header__nav--list">
-            <li class="header__nav--item"><a href="./about.html">About</a></li>
-            <li class="header__nav--item"><a href="./works.html">Works</a></li>
-            <li class="header__nav--item"><a href="./recruit.html">Recruit</a></li>
-            <li class="header__nav--item"><a href="./contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="btn__close-trigger">
-          <span></span>
-          <span></span>
-        </div>
+        <h1 class="header__company-name">有限会社 田里興業</h1>
       </div>
-    </nav>
+      <button class="header__hum-btn btn__open-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
+  <!-- ナビゲーション -->
+  <nav class="nav">
+    <div class="nav__container">
+      <div class="nav__list-wrap">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./about.html">About</a></li>
+          <li class="nav-item"><a href="./works.html">Works</a></li>
+          <li class="nav-item"><a href="./recruit.html">Recruit</a></li>
+          <li class="nav-item"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <btn class="nav__close-btn btn__close-trigger">閉じる</btn>
+      <div class="btn__close-trigger">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav><!-- ナビここまで -->
   <main>
     <section class="recruit">
       <div class="recruit__inner">
