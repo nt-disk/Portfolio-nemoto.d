@@ -26,6 +26,8 @@ body {
   dt,
   dd {
     font-weight: $weight-base;
+    // font-size: $font-size-base_sp;
+    font-size: 16px;
   }
 
   img {
@@ -56,11 +58,14 @@ button {
   position: absolute;
   top: 8px;
   left: 12px;
-  gap: 4px;
 
   .header__company-name {
     font-family: serif;
     font-size: 15px;
+    a {
+      display: block;
+      padding: 1rem 0;
+    }
   }
 }
 
@@ -86,7 +91,16 @@ button {
   z-index: 10;
   cursor: pointer;
   gap: 10px;
-  // padding: ;
+
+  // 疑似要素でタッチ範囲を広げる
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+  }
 
   span {
     width: 100%;
@@ -244,6 +258,7 @@ button {
 
 .nav-item {
   cursor: pointer;
+  letter-spacing: 0.1em;
   a {
     color: #060606;
     font-weight: 200;
@@ -279,6 +294,9 @@ button {
 
   h1 {
     font-size: 36px;
+    position: relative;
+    // padding: 0.2em 0.8em;
+    text-align: center;
   }
 
   @include mq(pc) {
@@ -302,6 +320,7 @@ button {
   font-size: 24px;
   text-align: center;
   margin-bottom: 30px;
+
   @include mq(pc) {
     font-size: 32px;
     margin-bottom: 42px;
@@ -317,12 +336,43 @@ button {
 //   }
 // }
 
+// *********************** sp-inner ***********************
+.picture-frame {
+  width: 250px;
+  height: 340px;
+  // flex-shrink: 0;
+
+  background: #f3f3f3;
+  box-shadow: 0px 4px 4px 0px rgba(93, 75, 75, 0.25);
+
+  margin: 0 auto;
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.picture-frame__nested-frame {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.picture-frame__img {
+  width: 240px;
+  height: 160px;
+  flex-shrink: 0;
+}
+
+.img01 {
+  margin-bottom: 10px;
+}
+
 // *************************** footer ***************************
 .footer {
-  padding-top: 16px;
+  padding-top: 24px;
   padding-bottom: 16px;
-  background: #efefef;
-  // background: gold;
+  background-color: rgb(28, 28, 28);
+  color: white;
   position: relative;
 
   @include mq(pc) {
@@ -335,7 +385,7 @@ button {
   text-align: center;
   display: flex;
   flex-direction: column;
-  // gap: 1.8em;
+  gap: 0.2em;
 
   small {
     font-size: 1rem;

@@ -1,6 +1,9 @@
 html {
   /* clampの設定に対する警告は無視してOK */
-  font-size: clamp(62.5%, 1.5vw, 100%);
+  // font-size: clamp(62.5%, 1.5vw, 100%);
+  font-size: 16px;
+  font-size: 62.5%;
+  font-size: clamp(14px, 2vw, 16px);
 }
 
 
@@ -9,12 +12,12 @@ $font-family-en: "Montserrat", sans-serif;
 // $section-title__font-family: "Shippori Mincho", serif;
 // $section-title__font-family: "Oswald", sans-serif;
 
-$font-size-base_sp: 1.5rem;
-$font-size-base_pc: 1.6rem;
+$font-size-base_sp: 1rem;
+$font-size-base_pc: 1rem;
 $line-height-base: 2;
 $color-base: #333;
 $weight-base: 300;
-$letter-spacing-base: 0.05rem;
+$letter-spacing-base: 0.05em;
 
 $background-base: #FFFFFF;
 $width-inner: 1280px;

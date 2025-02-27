@@ -1,21 +1,23 @@
 @charset "UTF-8";
 html {
   /* clampの設定に対する警告は無視してOK */
-  font-size: clamp(62.5%, 1.5vw, 100%);
+  font-size: 16px;
+  font-size: 62.5%;
+  font-size: clamp(14px, 2vw, 16px);
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 2;
   color: #333;
   font-family: "Noto Sans JP", sans-serif;
   background-color: #FFFFFF;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.05em;
 }
 @media screen and (min-width: 768px) {
   body {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 }
 body p {
@@ -24,6 +26,7 @@ body p {
 body dt,
 body dd {
   font-weight: 300;
+  font-size: 16px;
 }
 body img {
   display: block;
@@ -55,11 +58,14 @@ button {
   position: absolute;
   top: 8px;
   left: 12px;
-  gap: 4px;
 }
 .header__company-info .header__company-name {
   font-family: serif;
   font-size: 15px;
+}
+.header__company-info .header__company-name a {
+  display: block;
+  padding: 1rem 0;
 }
 
 .header__logo {
@@ -89,6 +95,14 @@ button {
   z-index: 10;
   cursor: pointer;
   gap: 10px;
+}
+.header__hum-btn::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 50px;
+  height: 50px;
 }
 .header__hum-btn span {
   width: 100%;
@@ -269,6 +283,7 @@ button {
 
 .nav-item {
   cursor: pointer;
+  letter-spacing: 0.1em;
 }
 .nav-item a {
   color: #060606;
@@ -311,6 +326,8 @@ button {
 }
 .sub-page__title h1 {
   font-size: 36px;
+  position: relative;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .sub-page__title {
@@ -340,10 +357,39 @@ button {
   }
 }
 
+.picture-frame {
+  width: 250px;
+  height: 340px;
+  background: #f3f3f3;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(93, 75, 75, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(93, 75, 75, 0.25);
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.picture-frame__nested-frame {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.picture-frame__img {
+  width: 240px;
+  height: 160px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.img01 {
+  margin-bottom: 10px;
+}
+
 .footer {
-  padding-top: 16px;
+  padding-top: 24px;
   padding-bottom: 16px;
-  background: #efefef;
+  background-color: rgb(28, 28, 28);
+  color: white;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -362,6 +408,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 0.2em;
 }
 .footer__ul small {
   font-size: 1rem;
@@ -878,31 +925,20 @@ p img {
 }
 
 .method__images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  height: 280px;
-  max-width: 403px;
-}
-@media screen and (min-width: 768px) {
-  .method__images {
-    width: 49%;
-  }
+  height: 300px;
+  width: 100%;
 }
 
 .method__img--01 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 49.5%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .method__img--02 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 49.5%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .method__wrapper2 {
