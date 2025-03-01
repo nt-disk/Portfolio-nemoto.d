@@ -3,7 +3,7 @@ html {
   // font-size: clamp(62.5%, 1.5vw, 100%);
   font-size: 16px;
   font-size: 62.5%;
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 
@@ -17,7 +17,7 @@ $font-size-base_pc: 1rem;
 $line-height-base: 2;
 $color-base: #333;
 $weight-base: 300;
-$letter-spacing-base: 0.05em;
+$letter-spacing-base: 0.07em;
 
 $background-base: #FFFFFF;
 $width-inner: 1280px;
