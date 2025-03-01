@@ -22,10 +22,16 @@ body {
     font-weight: $weight-base;
   }
 
-  dt,
+  dt {
+    font-weight: 600;
+  }
+
   dd {
     font-weight: $weight-base;
-    // font-size: $font-size-base_sp;
+  }
+
+  dt,
+  dd {
     font-size: 16px;
   }
 
