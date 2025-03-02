@@ -86,11 +86,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-$('.hide-text').hide();
-$(".readmore").on("click", function() {
-    $(this).toggleClass("on-click");
-    $(this).prev().slideToggle(500);
-});
+// $('.hide-text').hide();
+// $(".readmore").on("click", function() {
+//     $(this).toggleClass("on-click");
+//     $(this).prev().slideToggle(500);
+// });
 
 
 

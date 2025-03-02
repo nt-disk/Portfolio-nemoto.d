@@ -76,8 +76,8 @@
     </nav><!-- ナビここまで -->
     <!-- トップイメージ -->
     <div class="top">
-      <p><img src="./img/縦書き_テスト.png" alt=""></p>
-      <div class="top-img">
+      <p class="top__txt-img"><img src="./img/縦書き_テスト.png" alt=""></p>
+      <div class="top__img">
         <img src="./img/yoshino-02.jpg" alt="top背景画像">
       </div>
     </div>
@@ -89,27 +89,28 @@
         <div class="about__inner">
           <div class="about__wrapper">
             <div class="about__contents">
+              <!-- titleのクラスのスタイルは、読み込みmain.scssの読み込み順の結果、about__titleが優先される -->
               <h2 class="about__title section-title fadeUpTrigger">ABOUT</h2>
               <p class="about__description fadeUpTrigger">
                 今、再び注目を集めている『左官』<br>
-                職人の手仕事による技術の高さは
-                現代社会において貴重な<span>財産</span>です。
+                職人の手仕事による技術の高さは<br>
+                現代社会において貴重な<span class="about__description-highlight">財産</span>です。
               </p>
               <p class="about__text fadeUpTrigger">
-                弊社では仕上がりの美しさ、品質を大切にし、
+                弊社では仕上がりの美しさと品質をいちばんに考え、
                 作り手の想いが伝わる仕事を心がけております。
-                <br>
-                また左官工事のクリエイティブな魅力を若い世代に継承すべく人材育成に注力いたします。
+                <!-- <br> -->
+                また左官工事のクリエイティブな魅力を若い世代に継承すべく、人材育成に注力いたします。
                 <br>
                 <!-- <br> -->
-                田里興業は伝統の技術と最新の工法を織り交ぜ、
-                左官業界の更なる発展に向け、
+                田里興業は伝統の工法と最新技術を織り交ぜ、
+                左官業界の更なる発展に向けて
                 日々努力を積み重ねております。
               </p>
               <div class="button-more about__more fadeUpTrigger">
-                <a href="./about.html" class="button-link">
-                  <span class="text">View more</span>
-                  <span class="arrow">→</span>
+                <a href="./about.html" class="button-more__link">
+                  <span class="button-more__text">View more</span>
+                  <span class="button-more__arrow">→</span>
                 </a>
               </div>
             </div>
@@ -119,9 +120,9 @@
           </div>
         </div><!-- aboutインナー -->
       </section>
-      <!-- ******************************* work ******************************* -->
+      <!-- ******************************* works ******************************* -->
       <section class="works">
-        <div class="works__inner1">
+        <div class="works__inner">
           <div class="section-title__wrapper fadeUpTrigger">
             <h2 class="works__title section-title">
               Works
@@ -134,7 +135,7 @@
         <div class="works__main-img fadeUpTrigger">
           <img src="./img/DSC_0195 1.webp" alt="works__メイン画像">
         </div>
-        <div class="works__inner1">
+        <div class="works__inner">
           <div class="works__vertical-writing fadeUpTrigger late">
             <p>集合住宅<br>戸建住宅<br>商業施設<br>公共施設等<br>幅広く対応いたします。</p>
           </div>
@@ -142,73 +143,31 @@
             <p>集合住宅・戸建住宅・商業施設<br>公共施設など幅広く対応いたします。</p>
           </div>
         </div>
-        <div class="works__inner3">
-          <div class="works__text fadeUpTrigger">
-            <p>
-              良い魔女はドロシーに家に帰れる唯一の方法はエメラルドの都に行って壮大な魔力を持つオズの魔法使いに頼むことだと語る。
-            </p>
-            <div class="hide-text">
-              <p>
-                黄色いレンガ道を進み、ドロシーはボクという名のマンチキンによるパーティに出席する。翌日ドロシーは棒に引っ掛かったカカシを助け、ブリキの木こりに油をさし、臆病なライオンと出会う。カカシは脳を、ブリキの木こりは心を、ライオンは勇気を手に入れる願いを叶えてもらうため、ドロシーとトトと共に魔法使いに助けを求めにエメラルドの都に向かう。いくつかの冒険を乗り越え、一行はエメラルドの都の門で門番に会うと、街の輝きで目が眩まないように緑の眼鏡をかけるように言われる。1人1人呼ばれ、ドロシーは大理石の王座の上の巨大な頭、カカシは絹の紗に包まれた愛らしい女性、ブリキの木こりは恐ろしい野獣、臆病なライオンは火の玉の形をした魔法使いに会う。魔法使いはもしオズ王国のウィンキーの国を独裁する西の悪い魔女を殺せば全員の願いを叶えると語る。警備員はこれまで誰も西の悪い魔女を倒したことがないと警告する。
-              </p>
+        <div class="works__inner">
+          <h3 class="works__product">施工事例：ジョリパッド</h3>
+          <div class="picture-frame">
+            <div class="picture-frame__nested-frame">
+              <div class="picture-frame__img img01">
+                <img src="./img//14.webp" alt="">
+              </div>
+              <div class="picture-frame__img img02">
+                <img src="./img//13.webp" alt="">
+              </div>
             </div>
-            <!-- ************** 続きを見るボタン ************** -->
-            <button class="readmore">
-              <span class="open fadeUpTrigger">続きを読む</span>
-              <span class="close">閉じる</span>
-            </button>
+          </div>
+          <div class="works__txt fadeUpTrigger">
+            <p>
+              ジョリパット施工は、デザイン性と耐久性を兼ね備えた高品質な塗り壁材です。独特の質感と多彩な仕上げパターンで、住宅や商業施設の外壁・内装を美しく演出します。
+              弊社では、熟練の左官職人が丁寧な施工を行い、お客様の理想の仕上がりを実現します。
+            </p>
+          </div>
+          <div class="button-more works__more fadeUpTrigger">
+            <a href="./about.html" class="button-more__link">
+              <span class="button-more__text">View more</span>
+              <span class="button-more__arrow">→</span>
+            </a>
           </div>
         </div>
-      </section>
-      <!-- ******************************* Product ******************************* -->
-      <section class="product">
-        <div class="product__inner">
-          <div class="section-title__wrapper">
-            <h2 class="product__title section-title fadeUpTrigger">Product</h2>
-            <p class="section__subtitle">施工事例紹介</p>
-          </div>
-          <div class="product__wrapper1">
-            <div class="product__text fadeUpTrigger">
-              <p>
-                スタンプのようにコンクリート床面に型押しする事により自然石やレンガ・タイル模様などの風合いを表現する工法です。スタンプのようにコンクリート床面に型押しする事により自然石やレンガ・タイル模様などの風合いを表現する工法です。
-              </p>
-              <!-- <p>スタンプのようにコンクリート床面に型押しする事により自然石やレンガ・タイル模様などの風合いを表現する工法です。</p> -->
-            </div>
-            <!-- <div class="product__images">
-              <div class="product__img--01 fadeUpTrigger late">
-                <img src="./img/stamp1.webp" alt="スタコン画像">
-              </div>
-              <div class="product__img--02 fadeUpTrigger">
-                <img src="./img/stamp2.webp" alt="下地画像">
-              </div>
-            </div> -->
-            <!-- <div class="picture-frame">
-              <div class="picture-frame__nested-frame">
-                <div class="picture-frame__img img01">
-                  <img src="./img/stamp1.webp" alt="">
-                </div>
-                <div class="picture-frame__img img02">
-                  <img src="./img/stamp2.webp" alt="">
-                </div>
-              </div>
-            </div> -->
-          </div>
-          <div class="product__wrapper2">
-            <div class="product__text--02 fadeUpTrigger">
-              <p>いくつになっても凝り固まらず、<br>
-                自然に変化していくわたしと共に<br>
-                ゆるく変化できる家であってほしいから、<br>
-                用途の決まった小さな部屋が<br class="sp">たくさんあるよりも、<br>
-                ヨハクたっぷりの、<br class="sp">シンプルな大空間があるといい。</p>
-              <p>スタンプのようにコンクリート床面に型押しする事により自然石やレンガ・タイル模様などの風合いを表現する工法です。ニーズに合わせて景観を自由に創り出せます。</p>
-              <p>スタンプのようにコンクリート床面に型押しする事により自然石やレンガ・タイル模様などの風合いを表現する工法です。ニーズに合わせて景観を自由に創り出せます。</p>
-              <p>スタンプのようにコンクリート床面に型押しする事により自然石やレンガ・タイル模様などの風合いを表現する工法です。ニーズに合わせて景観を自由に創り出せます。</p>
-            </div>
-          </div>
-          <div class="product__img--03 fadeUpTrigger late">
-            <img src="./img/joripaddo-ver2.webp" alt="ジョリパッド画像">
-          </div>
-        </div><!-- productインナー -->
       </section>
       <!-- *********************** recruit-contact *********************** -->
       <section class="recruit-contact">
@@ -223,13 +182,13 @@
               <p class="recruit__description fadeUpTrigger">
                 一緒にはたらく仲間を<br>募集しています。
               </p>
-              <p class="recruit__text fadeUpTrigger">
+              <p class="recruit__txt fadeUpTrigger">
                 詳細は募集要項をご覧ください
               </p>
-              <div class="button-more recruit__more fadeUpTrigger">
-                <a href="./recruit.html" class="button-link">
-                  <span class="text">View more</span>
-                  <span class="arrow">→</span>
+              <div class="button-more fadeUpTrigger">
+                <a href="./recruit.html" class="button-more__link">
+                  <span class="button-more__text">View more</span>
+                  <span class="button-more__arrow">→</span>
                 </a>
               </div>
             </div>

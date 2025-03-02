@@ -1,9 +1,5 @@
 html {
-  /* clampの設定に対する警告は無視してOK */
-  // font-size: clamp(62.5%, 1.5vw, 100%);
-  font-size: 16px;
-  font-size: 62.5%;
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(15px, 2vw, 18px);
 }
 
 
