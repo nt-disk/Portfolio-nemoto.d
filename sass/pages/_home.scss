@@ -67,6 +67,10 @@
   }
 }
 
+.about__title__up {
+  text-indent: .25em;
+}
+
 .about__title {
   color: #2d2d2d;
   margin-bottom: 32px;
@@ -87,8 +91,7 @@
 }
 
 .about__description {
-  font-size: 16px;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 24px;
   // color: rgb(96, 96, 96);
@@ -230,18 +233,7 @@
   }
 }
 
-.section__subtitle {
-  font-family: "M PLUS Rounded 1c";
-  font-size: 14px;
-  line-height: 1;
-  color: black;
 
-  @include mq(pc) {
-    font-size: 24px;
-    // font-weight: 400;
-    text-align: center;
-  }
-}
 
 .works__main-img {
   // margin-bottom: 42px;
@@ -299,9 +291,6 @@
   font-size: 1.3em;
   font-weight: 300;
   margin-bottom: 12px;
-
-  padding: 0.25em 0.5em;
-  border-left: solid 5px rgb(119, 119, 118);
 }
 
 .works__txt {

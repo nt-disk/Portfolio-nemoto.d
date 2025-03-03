@@ -62,7 +62,7 @@ button {
   align-items: center;
   position: absolute;
   top: 8px;
-  left: 12px;
+  left: 8px;
 
   .header__company-name {
     font-family: serif;
@@ -294,8 +294,9 @@ button {
   background-color: rgb(242, 241, 241);
   height: 140px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  // justify-content: center;
+  padding-left: 2rem;
 
   h1 {
     font-size: 36px;
@@ -312,6 +313,13 @@ button {
 }
 
 // ******* sectionタイトル *************
+.section__title__up {
+  font-size: 14px;
+  line-height: 1;
+  color: rgb(99, 99, 99);
+  margin-bottom: .125rem;
+}
+
 .section-title {
   font-size: 42px;
   font-family: $font-family-ja;
@@ -323,7 +331,7 @@ button {
 // ******** サブページsection-title*********
 .sub-page__section-title {
   font-size: 24px;
-  text-align: center;
+  // text-align: center;
   margin-bottom: 30px;
 
   @include mq(pc) {
@@ -434,3 +442,10 @@ button {
     }
   }
 }
+
+.deco-title {
+  padding: 0.25em 0.5em;
+  border-left: solid 5px rgb(119, 119, 118);
+}
+
+

@@ -1,20 +1,21 @@
 @charset "UTF-8";
 html {
   font-size: clamp(15px, 2vw, 18px);
+  font-size: 62.5%; /* 10px = 1rem */
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 2;
   color: #333;
   font-family: "Noto Sans JP", sans-serif;
   background-color: #FFFFFF;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
 }
 @media screen and (min-width: 768px) {
   body {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 body p {
@@ -59,7 +60,7 @@ button {
           align-items: center;
   position: absolute;
   top: 8px;
-  left: 12px;
+  left: 8px;
 }
 .header__company-info .header__company-name {
   font-family: serif;
@@ -319,12 +320,10 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 2rem;
 }
 .sub-page__title h1 {
   font-size: 36px;
@@ -339,6 +338,13 @@ button {
   }
 }
 
+.section__title__up {
+  font-size: 14px;
+  line-height: 1;
+  color: rgb(99, 99, 99);
+  margin-bottom: 0.125rem;
+}
+
 .section-title {
   font-size: 42px;
   font-family: "Noto Sans JP", sans-serif;
@@ -349,7 +355,6 @@ button {
 
 .sub-page__section-title {
   font-size: 24px;
-  text-align: center;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -457,6 +462,11 @@ button {
   }
 }
 
+.deco-title {
+  padding: 0.25em 0.5em;
+  border-left: solid 5px rgb(119, 119, 118);
+}
+
 @media screen and (min-width: 768px) {
   .all-section__wrapper {
     min-width: 1200px;
@@ -531,6 +541,10 @@ button {
   }
 }
 
+.about__title__up {
+  text-indent: 0.25em;
+}
+
 .about__title {
   color: #2d2d2d;
   margin-bottom: 32px;
@@ -552,8 +566,7 @@ button {
           flex-direction: column;
 }
 .about__description {
-  font-size: 16px;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 24px;
   color: #4f4f4f;
@@ -707,19 +720,6 @@ button {
   }
 }
 
-.section__subtitle {
-  font-family: "M PLUS Rounded 1c";
-  font-size: 14px;
-  line-height: 1;
-  color: black;
-}
-@media screen and (min-width: 768px) {
-  .section__subtitle {
-    font-size: 24px;
-    text-align: center;
-  }
-}
-
 .works__main-img {
   margin-bottom: 30px;
 }
@@ -772,8 +772,6 @@ button {
   font-size: 1.3em;
   font-weight: 300;
   margin-bottom: 12px;
-  padding: 0.25em 0.5em;
-  border-left: solid 5px rgb(119, 119, 118);
 }
 
 .works__txt {
@@ -1046,7 +1044,8 @@ button {
 }
 
 .about-page .greeting {
-  padding: 45px 0;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
 }
 @media screen and (min-width: 768px) {
   .about-page .greeting {
@@ -1065,6 +1064,9 @@ button {
     padding-bottom: 80px;
   }
 }
+.about-page .greeting__title {
+  text-indent: -0.15em;
+}
 @media screen and (min-width: 768px) {
   .about-page .greeting__wrap {
     display: -webkit-box;
@@ -1079,12 +1081,17 @@ button {
 .about-page .greeting__txt {
   margin-bottom: 14px;
   text-align: justify;
+  margin-bottom: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .about-page .greeting__txt {
     width: 518px;
     line-height: 2.5;
   }
+}
+.about-page .signature {
+  -moz-text-align-last: right;
+       text-align-last: right;
 }
 .about-page .section-line {
   padding-left: 30px;
@@ -1117,7 +1124,6 @@ button {
 }
 .about-page .company__title {
   font-size: 24px;
-  text-align: center;
   margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {

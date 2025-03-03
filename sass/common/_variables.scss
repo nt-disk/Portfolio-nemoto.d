@@ -1,5 +1,6 @@
 html {
   font-size: clamp(15px, 2vw, 18px);
+  font-size: 62.5%; /* 10px = 1rem */
 }
 
 
@@ -8,12 +9,12 @@ $font-family-en: "Montserrat", sans-serif;
 // $section-title__font-family: "Shippori Mincho", serif;
 // $section-title__font-family: "Oswald", sans-serif;
 
-$font-size-base_sp: 1rem;
-$font-size-base_pc: 1rem;
+$font-size-base_sp: 1.5rem;
+$font-size-base_pc: 1.6rem;
 $line-height-base: 2;
 $color-base: #333;
 $weight-base: 300;
-$letter-spacing-base: 0.07em;
+$letter-spacing-base: 0.06em;
 
 $background-base: #FFFFFF;
 $width-inner: 1280px;

@@ -4,7 +4,8 @@
 
 // *************************** greeting ***************************
   .greeting {
-    padding: 45px 0;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
     @include mq(pc) {
       padding-top: 170px;
       padding-bottom: 100px;
@@ -22,6 +23,10 @@
     }
   }
 
+  .greeting__title {
+    text-indent: -.15em;
+  }
+
   .greeting__wrap {
     @include mq(pc) {
       display: flex;
@@ -33,10 +38,15 @@
   .greeting__txt {
     margin-bottom: 14px;
     text-align: justify;
+    margin-bottom: 2.5rem;
     @include mq(pc) {
       width: 518px;
       line-height: 2.5;
     }
+  }
+
+  .signature {
+    text-align-last: right;
   }
 
   .section-line {
@@ -68,7 +78,6 @@
 
   .company__title {
     font-size: 24px;
-    text-align: center;
     margin-bottom: 32px;
     @include mq(pc) {
       font-size: 32px;
