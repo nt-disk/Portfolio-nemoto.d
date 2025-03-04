@@ -32,7 +32,7 @@ body {
 
   dt,
   dd {
-    font-size: 16px;
+    font-size: $font-size-base_sp;
   }
 
   img {
@@ -47,10 +47,16 @@ button {
 // *************************** header ***************************
 .header {
   height: 65px;
-  background-color: white;
+  background-color: $background-base;
   position: sticky;
   top: 0;
   z-index: 150;
+
+  @media(min-width:800px) {
+    height: 90px;
+    background-color: rgb(163, 163, 163);
+  }
+
 }
 
 .header__container {
@@ -66,7 +72,7 @@ button {
 
   .header__company-name {
     font-family: serif;
-    font-size: 15px;
+    font-size: $font-size-base_sp;
     a {
       display: block;
       padding: 1rem 0;
@@ -76,33 +82,38 @@ button {
 
 .header__logo {
   // 高さ位置調整
-  width: 55px;
+  // width: 55px;
+  width: 5.5rem;
   z-index: 3;
 
-  @include mq(pc) {
-    top: 30px;
-    left: 30px;
-    width: 80px;
-  }
+  // @include mq(pc) {
+  //   top: 3rem;
+  //   left: 3rem;
+  //   width: 8rem;
+  // }
+
+  //ここから
 }
 
 .header__hum-btn {
-  width: 30px;
+  width: 3rem;
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 22px;
+  top: 2.2rem;
   right: 13px;
+  right: 1.3rem;
   z-index: 10;
   cursor: pointer;
-  gap: 10px;
+  gap: 1rem;
 
   // 疑似要素でタッチ範囲を広げる
   &::before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: -1rem;
+    left: -1rem;
     width: 50px;
     height: 50px;
   }
@@ -117,9 +128,9 @@ button {
 
   @include mq(pc) {
     width: 70px;
-    top: 46px;
-    right: 38px;
-    gap: 15px;
+    top: 4.6rem;
+    right: 3.8rem;
+    gap: 1.5rem;
 
     &:hover {
       span:nth-of-type(1) {
@@ -134,18 +145,6 @@ button {
     }
   }
 }
-
-// *************************** sub-page-header ***************************
-// .sub-page-header {
-//   // width: 390px;
-//   height: 180px;
-//   background: #efefef;
-//   // background-color: #ff0000;
-
-//   @include mq(pc) {
-//     height: 410px;
-//   }
-// }
 
 /*=============================
 ナビゲーション

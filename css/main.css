@@ -1,6 +1,5 @@
 @charset "UTF-8";
 html {
-  font-size: clamp(15px, 2vw, 18px);
   font-size: 62.5%; /* 10px = 1rem */
 }
 
@@ -29,7 +28,7 @@ body dd {
 }
 body dt,
 body dd {
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 body img {
   display: block;
@@ -41,10 +40,16 @@ button {
 
 .header {
   height: 65px;
-  background-color: white;
+  background-color: #FFFFFF;
   position: sticky;
   top: 0;
   z-index: 150;
+}
+@media (min-width: 800px) {
+  .header {
+    height: 90px;
+    background-color: rgb(163, 163, 163);
+  }
 }
 
 .header__container {
@@ -64,7 +69,7 @@ button {
 }
 .header__company-info .header__company-name {
   font-family: serif;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 .header__company-info .header__company-name a {
   display: block;
@@ -72,19 +77,12 @@ button {
 }
 
 .header__logo {
-  width: 55px;
+  width: 5.5rem;
   z-index: 3;
-}
-@media screen and (min-width: 768px) {
-  .header__logo {
-    top: 30px;
-    left: 30px;
-    width: 80px;
-  }
 }
 
 .header__hum-btn {
-  width: 30px;
+  width: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,16 +92,18 @@ button {
           flex-direction: column;
   position: absolute;
   top: 22px;
+  top: 2.2rem;
   right: 13px;
+  right: 1.3rem;
   z-index: 10;
   cursor: pointer;
-  gap: 10px;
+  gap: 1rem;
 }
 .header__hum-btn::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: -1rem;
+  left: -1rem;
   width: 50px;
   height: 50px;
 }
@@ -118,9 +118,9 @@ button {
 @media screen and (min-width: 768px) {
   .header__hum-btn {
     width: 70px;
-    top: 46px;
-    right: 38px;
-    gap: 15px;
+    top: 4.6rem;
+    right: 3.8rem;
+    gap: 1.5rem;
   }
   .header__hum-btn:hover span:nth-of-type(1) {
     width: 90%;
