@@ -580,6 +580,17 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media screen and (min-width: 768px) {
   .about__wrapper {
     display: -webkit-box;
@@ -588,7 +599,7 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 5%;
+    gap: 5rem;
   }
   .about__wrapper .about__contents,
   .about__wrapper .about__img {

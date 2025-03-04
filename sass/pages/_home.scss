@@ -68,7 +68,7 @@
   padding-top: 120px;
   padding-bottom: 120px;
 
-  @include mq(pc) {
+  @include mq() {
     padding-top: 300px;
     padding-bottom: 220px;
   }
@@ -87,10 +87,16 @@
 }
 
 .about__wrapper {
-  @include mq(pc) {
+  @include mq(tb) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include mq() {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 5rem;
+
     .about__contents,
     .about__img {
       flex: 1;
