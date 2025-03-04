@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 html {
   // font-size: clamp(15px, 2vw, 18px);
   font-size: 62.5%; /* 10px = 1rem */
@@ -19,10 +21,25 @@ $letter-spacing-base: 0.06em;
 $background-base: #FFFFFF;
 $width-inner: 128rem;
 
+
+
+
+//マップ型変数breakpointsを定義
 $breakpoints: (
+  //767px以下（スマホ）用の表示
   sp: "screen and (max-width: 767px)",
+  //768px以上（PC）用の表示
   pc: "screen and (min-width: 768px)",
+  //1400px以上（PC大きめ）用の表示
   pc-max: "screen and (min-width: 1400px)"
 );
 
 
+//メディアクエリ用のmixinを定義。デフォルト値はsp
+@mixin mq($breakpoint: pc) {
+  //map-get(マップ型変数, キー)で値を取得
+  @media #{map.get($breakpoints, $breakpoint)} {
+    //@contentはカスタムできる箇所
+    @content;
+  }
+}

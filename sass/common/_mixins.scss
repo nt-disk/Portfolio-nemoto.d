@@ -1,10 +1,8 @@
-@use 'sass:map';
-@use 'variables' as *;
-@forward 'variables';
+// mixinsファイルは不要だが、そうなるとhelperも不要になる
+// 運用変更が生じた場合を考え、mixin(およびhelper)を残しておく
+
+// @use 'variables' as *;
+// @forward 'variables';
 
 
-@mixin mq($breakpoint: pc) {
-  @media #{map.get($breakpoints, $breakpoint)} {
-    @content;
-  }
-}
+
