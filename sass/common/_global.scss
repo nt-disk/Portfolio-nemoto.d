@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use "./variables" as *;
 // @use "./mixins" as *;
 // @forward './variables';
 // @forward './mixins';
@@ -52,23 +52,44 @@ button {
   top: 0;
   z-index: 150;
 
-  @media(min-width:800px) {
+  @include mq() {
     height: 90px;
-    background-color: rgb(163, 163, 163);
+    background-color: rgba(255, 255, 255, 0);
   }
-
 }
 
-.header__container {
-  position: relative;
-}
+// .header__container {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+// }
 
 .header__company-info {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 0.8rem;
+  left: 0.8rem;
+  z-index: 5;
+
+  @include mq() {
+    top: 4rem;
+    left: 5rem;
+  }
+
+  @include mq(pc-max) {
+    left: 8rem;
+  }
+
+  .header__logo {
+    // 高さ位置調整
+    width: 5.5rem;
+
+    @include mq() {
+      width: 8rem;
+    }
+
+  }
 
   .header__company-name {
     font-family: serif;
@@ -78,21 +99,7 @@ button {
       padding: 1rem 0;
     }
   }
-}
 
-.header__logo {
-  // 高さ位置調整
-  // width: 55px;
-  width: 5.5rem;
-  z-index: 3;
-
-  // @include mq(pc) {
-  //   top: 3rem;
-  //   left: 3rem;
-  //   width: 8rem;
-  // }
-
-  //ここから
 }
 
 .header__hum-btn {
@@ -100,13 +107,30 @@ button {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 22px;
   top: 2.2rem;
-  right: 13px;
   right: 1.3rem;
   z-index: 10;
   cursor: pointer;
   gap: 1rem;
+
+  @include mq() {
+    width: 7rem;
+    top: 5.3rem;
+    right: 5.5rem;
+    gap: 1.5rem;
+
+    &:hover {
+      span:nth-of-type(1) {
+        width: 90%;
+      }
+      span:nth-of-type(2) {
+        width: 70%;
+      }
+      span:nth-of-type(3) {
+        width: 50%;
+      }
+    }
+  }
 
   // 疑似要素でタッチ範囲を広げる
   &::before {
@@ -123,26 +147,16 @@ button {
     height: 1px;
     background-color: #000;
     display: block;
-    transition: width 0.5s;
+    transition: width 0.3s;
+
+    @include mq() {
+      height: 2px;
+      background-color: #515151;
+    }
   }
 
-  @include mq(pc) {
-    width: 70px;
-    top: 4.6rem;
-    right: 3.8rem;
-    gap: 1.5rem;
-
-    &:hover {
-      span:nth-of-type(1) {
-        width: 90%;
-      }
-      span:nth-of-type(2) {
-        width: 70%;
-      }
-      span:nth-of-type(3) {
-        width: 50%;
-      }
-    }
+  @include mq(pc-max) {
+    right: 9rem;
   }
 }
 
@@ -316,7 +330,7 @@ button {
   font-size: 14px;
   line-height: 1;
   color: rgb(99, 99, 99);
-  margin-bottom: .125rem;
+  margin-bottom: 0.125rem;
 }
 
 .section-title {
@@ -400,7 +414,7 @@ button {
   gap: 0.2em;
 
   small {
-    font-size: .7rem;
+    font-size: 0.7rem;
     font-weight: 200;
   }
 
@@ -446,5 +460,3 @@ button {
   padding: 0.25em 0.5em;
   border-left: solid 5px rgb(119, 119, 118);
 }
-
-

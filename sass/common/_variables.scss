@@ -31,11 +31,11 @@ $breakpoints: (
   //768px以上（PC）用の表示
   pc: "screen and (min-width: 768px)",
   //1400px以上（PC大きめ）用の表示
-  pc-max: "screen and (min-width: 1400px)"
-);
+  pc-max: "screen and (min-width: 2100px)"
+)!default; // 今の所defaultは必要ないが、念の為
 
 
-//メディアクエリ用のmixinを定義。デフォルト値はsp
+//メディアクエリ用のmixinを定義。デフォルト値はpc
 @mixin mq($breakpoint: pc) {
   //map-get(マップ型変数, キー)で値を取得
   @media #{map.get($breakpoints, $breakpoint)} {

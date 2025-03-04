@@ -45,15 +45,11 @@ button {
   top: 0;
   z-index: 150;
 }
-@media (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .header {
     height: 90px;
-    background-color: rgb(163, 163, 163);
+    background-color: rgba(255, 255, 255, 0);
   }
-}
-
-.header__container {
-  position: relative;
 }
 
 .header__company-info {
@@ -64,8 +60,28 @@ button {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 0.8rem;
+  left: 0.8rem;
+  z-index: 5;
+}
+@media screen and (min-width: 768px) {
+  .header__company-info {
+    top: 4rem;
+    left: 5rem;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .header__company-info {
+    left: 8rem;
+  }
+}
+.header__company-info .header__logo {
+  width: 5.5rem;
+}
+@media screen and (min-width: 768px) {
+  .header__company-info .header__logo {
+    width: 8rem;
+  }
 }
 .header__company-info .header__company-name {
   font-family: serif;
@@ -74,11 +90,6 @@ button {
 .header__company-info .header__company-name a {
   display: block;
   padding: 1rem 0;
-}
-
-.header__logo {
-  width: 5.5rem;
-  z-index: 3;
 }
 
 .header__hum-btn {
@@ -91,13 +102,28 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 22px;
   top: 2.2rem;
-  right: 13px;
   right: 1.3rem;
   z-index: 10;
   cursor: pointer;
   gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .header__hum-btn {
+    width: 7rem;
+    top: 5.3rem;
+    right: 5.5rem;
+    gap: 1.5rem;
+  }
+  .header__hum-btn:hover span:nth-of-type(1) {
+    width: 90%;
+  }
+  .header__hum-btn:hover span:nth-of-type(2) {
+    width: 70%;
+  }
+  .header__hum-btn:hover span:nth-of-type(3) {
+    width: 50%;
+  }
 }
 .header__hum-btn::before {
   content: "";
@@ -112,24 +138,18 @@ button {
   height: 1px;
   background-color: #000;
   display: block;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 @media screen and (min-width: 768px) {
+  .header__hum-btn span {
+    height: 2px;
+    background-color: #515151;
+  }
+}
+@media screen and (min-width: 2100px) {
   .header__hum-btn {
-    width: 70px;
-    top: 4.6rem;
-    right: 3.8rem;
-    gap: 1.5rem;
-  }
-  .header__hum-btn:hover span:nth-of-type(1) {
-    width: 90%;
-  }
-  .header__hum-btn:hover span:nth-of-type(2) {
-    width: 70%;
-  }
-  .header__hum-btn:hover span:nth-of-type(3) {
-    width: 50%;
+    right: 9rem;
   }
 }
 
@@ -199,7 +219,7 @@ button {
     gap: 30px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 2100px) {
   .nav__container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -231,7 +251,7 @@ button {
     font-weight: 250;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 2100px) {
   .nav__left {
     width: auto;
     font-size: 20px;
@@ -259,7 +279,7 @@ button {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 2100px) {
   .nav__list-wrap {
     width: auto;
   }
