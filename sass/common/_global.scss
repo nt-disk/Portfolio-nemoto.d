@@ -53,8 +53,10 @@ button {
   z-index: 150;
 
   @include mq() {
-    height: 90px;
+    height: 150px;
     background-color: rgba(255, 255, 255, 0);
+    // background-color: yellow;
+    // padding: 120px 0;
   }
 }
 
@@ -115,7 +117,7 @@ button {
 
   @include mq() {
     width: 7rem;
-    top: 5.3rem;
+    top: 6rem;
     right: 5.5rem;
     gap: 1.5rem;
 
