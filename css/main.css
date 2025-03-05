@@ -414,10 +414,10 @@ button {
 }
 .pic-f {
   width: 80%;
-  margin: 0 auto;
   border: 5px solid #fff;
   -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  min-width: 254px;
   max-width: 500px;
   margin-bottom: 32px;
 }
@@ -461,8 +461,13 @@ button {
   gap: 0.2em;
 }
 .footer__ul small {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 200;
+}
+@media screen and (min-width: 768px) {
+  .footer__ul small {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__ul {
@@ -596,7 +601,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .about__inner {
-    padding: 0;
+    padding: 0 6rem;
     max-width: 120rem;
     margin: 0 auto;
   }
@@ -755,13 +760,13 @@ button {
 }
 
 .works {
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
 }
 @media screen and (min-width: 768px) {
   .works {
-    padding-top: 260px;
-    padding-bottom: 150px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -778,7 +783,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .works__inner {
-    padding: 0;
+    padding: 0 6rem;
     max-width: 120rem;
     margin: 0 auto;
   }
@@ -802,9 +807,10 @@ button {
     display: -ms-flexbox;
     display: flex;
     gap: 5rem;
+    padding: 0 6rem;
     max-width: 120rem;
     margin: 0 auto;
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -861,9 +867,6 @@ button {
   }
 }
 
-.works__t {
-  margin-bottom: 2rem;
-}
 @media screen and (min-width: 768px) {
   .works__t2 {
     display: -webkit-box;
@@ -880,40 +883,51 @@ button {
 .works__product__title {
   font-size: 1.3em;
   font-weight: 300;
-  margin-bottom: 12px;
+  margin-bottom: 1.6rem;
 }
 
 .works__txt {
   text-align: justify;
   margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .works__txt {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works__txt {
+    letter-spacing: 0.06em;
+  }
 }
 
 .works__pic {
-  margin-bottom: 1.6rem;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
 }
-
 @media screen and (min-width: 768px) {
-  .works__more {
+  .works__pic {
     margin: 0;
+    margin-bottom: 3rem;
   }
 }
 
 .recruit-contact {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 @media screen and (min-width: 768px) {
   .recruit-contact {
-    padding-top: 240px;
-    padding-bottom: 240px;
-    max-width: 1400px;
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+    max-width: 120rem;
     margin: 0 auto;
   }
 }
 
 .recruit-contact__inner {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -921,7 +935,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 160px;
+  gap: 16rem;
 }
 @media screen and (min-width: 768px) {
   .recruit-contact__inner {
@@ -929,8 +943,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 6rem;
     gap: 0px;
   }
 }
@@ -1010,27 +1023,28 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .recruit-contact__wrapper2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 49%;
     position: relative;
   }
-  .recruit-contact__wrapper2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 1px;
-    background-color: #c5c5c5;
-  }
+}
+
+.pc-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background-color: #c5c5c5;
 }
 
 .contact__title--wrapper {
@@ -1045,6 +1059,7 @@ button {
 
 .contact__wrapper {
   text-align: center;
+  margin-bottom: 4.2rem;
 }
 @media screen and (min-width: 768px) {
   .contact__wrapper {
@@ -1057,6 +1072,12 @@ button {
   font-size: 15px;
   font-weight: 350;
   line-height: 2.5;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__more {
+    margin-top: auto;
+  }
 }
 
 /* ぼかしから出現 */

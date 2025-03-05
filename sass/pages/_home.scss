@@ -224,12 +224,12 @@
 
 // ---------- works ----------
 .works {
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
 
   @include mq() {
-    padding-top: 260px;
-    padding-bottom: 150px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -262,9 +262,10 @@
   @include mq() {
     display: flex;
     gap: 5rem;
+    padding: $padding_pc;
     max-width: $max-width_pc;
     margin: $margin-auto_pc;
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -333,7 +334,7 @@
 }
 
 .works__t {
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   @include mq() {
     // display: flex;
     // flex-direction: column;
@@ -358,50 +359,59 @@
 .works__product__title {
   font-size: 1.3em;
   font-weight: 300;
-  margin-bottom: 12px;
+  margin-bottom: 1.6rem;
 }
 
 .works__txt {
   text-align: justify;
   margin-bottom: 1.5rem;
+  letter-spacing: .05em;
+
+  @include mq(tb) {
+    background-color: red;
+  }
+  @include mq() {
+    letter-spacing: $letter-spacing-base;
+  }
 }
 
 .works__pic {
-  margin-bottom: 1.6rem;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  @include mq() {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 .works__more {
-  // margin-left: auto;
-  // margin-bottom: 40px;
-  // margin-left: auto;
   @include mq() {
-    margin: 0;
+    // margin: 0;
+    // margin-left: auto;
   }
 }
 
 // ---------- recruit-contact ----------
 .recruit-contact {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
   @include mq(pc) {
-    padding-top: 240px;
-    padding-bottom: 240px;
-    max-width: 1400px;
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+    max-width: $max-width_pc;
     margin: 0 auto;
   }
 }
 
 .recruit-contact__inner {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: $padding_sp;
   display: flex;
   flex-direction: column;
-  gap: 160px;
+  gap: 16rem;
 
   @include mq(pc) {
     flex-direction: row;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: $padding_pc;
     gap: 0px;
   }
 }
@@ -467,22 +477,26 @@
 .recruit-contact__wrapper2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  @include mq(pc) {
+  @include mq() {
     display: flex;
-    align-items: center;
     width: 49%;
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 1px;
-      background-color: #c5c5c5;
-    }
+    
+  }
+}
+
+.pc-line {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background-color: #c5c5c5;
   }
 }
 
@@ -503,12 +517,12 @@
 
 .contact__wrapper {
   text-align: center;
+  margin-bottom: 4.2rem;
 
-  @include mq(pc) {
+  @include mq() {
     text-align: center;
     margin: 0 auto;
   }
-  // margin-bottom: 36px;
 }
 
 .contact__route {
@@ -517,6 +531,12 @@
   line-height: 2.5;
   // padding-bottom: 6px;
   // border-bottom: 1px solid #888888;
+}
+
+.contact__more {
+  @include mq() {
+    margin-top: auto;
+  }
 }
 
 // ---------- じわっ ----------

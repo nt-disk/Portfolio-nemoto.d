@@ -409,9 +409,10 @@ button {
 // あたらしい写真フレーム
 .pic-f {
   width: 80%;
-  margin: 0 auto;
+  // margin: 0 auto;
   border: 5px solid #fff;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  min-width: 254px;
   max-width: 500px;
   margin-bottom: 32px;
 
@@ -452,8 +453,12 @@ button {
   gap: 0.2em;
 
   small {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 200;
+
+    @include mq() {
+      font-size: 1.2rem;
+    }
   }
 
   @include mq(pc) {
