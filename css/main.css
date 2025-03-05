@@ -412,15 +412,27 @@ button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-.img01 {
-  margin-bottom: 10px;
-}
 .pic-f {
   width: 80%;
+  margin: 0 auto;
   border: 5px solid #fff;
   -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
   max-width: 500px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .pic-f {
+    border: 8px solid #fff;
+  }
+}
+.pic-f .img01 {
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .pic-f .img01 {
+    margin-bottom: 8px;
+  }
 }
 
 .footer {
