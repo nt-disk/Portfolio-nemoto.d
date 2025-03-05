@@ -20,6 +20,19 @@ $letter-spacing-base: 0.06em;
 $background-base: #ffffff;
 $width-inner: 128rem;
 
+$padding_sp: 0 3rem;
+$padding_pc: 0;
+
+// あとで数値決める
+$max-width_sp: 0rem;
+$max-width_pc: 120rem;
+
+$margin-auto_pc: 0 auto;
+// 基本的にflex-boxで対処
+// 調整にmarginやpaddingを使う
+
+
+
 //マップ型変数breakpointsを定義
 $breakpoints: (
   //767px以下（スマホ）用の表示

@@ -333,6 +333,11 @@ button {
   line-height: 1;
   color: rgb(99, 99, 99);
   margin-bottom: 0.125rem;
+
+  @include mq() {
+    font-size: 2rem;
+  }
+
 }
 
 .section-title {
@@ -368,31 +373,47 @@ button {
 .picture-frame {
   width: 250px;
   height: 340px;
-  // flex-shrink: 0;
+  flex-shrink: 0;
 
-  background: #f3f3f3;
+  background-color: #f3f3f3;
   box-shadow: 0px 4px 4px 0px rgba(93, 75, 75, 0.25);
-
   margin: 0 auto;
   position: relative;
-
   margin-bottom: 32px;
+
+  @include mq() {
+    // width: 500px;
+    // height: 680px;
+  }
 }
 
 .picture-frame__nested-frame {
   position: absolute;
   top: 5px;
   left: 5px;
+
+  @include mq() {
+    // top: 10px;
+    // left: 10px;
+  }
 }
 
 .picture-frame__img {
   width: 240px;
   height: 160px;
   flex-shrink: 0;
+
+  @include mq() {
+    // width: 480px;
+    // height: 320px;
+  }
 }
 
 .img01 {
   margin-bottom: 10px;
+  @include mq() {
+    // margin-bottom: 15px;
+  }
 }
 
 // *************************** footer ***************************

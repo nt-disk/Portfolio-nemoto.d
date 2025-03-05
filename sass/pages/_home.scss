@@ -79,9 +79,10 @@
   padding-right: 30px;
 
   @include mq(pc) {
-    max-width: 1200px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: $padding_pc;
+    max-width: $max-width_pc;
+    // padding-left: 60px;
+    // padding-right: 60px;
     margin: 0 auto;
   }
 }
@@ -110,11 +111,11 @@
 
 .about__title {
   color: #2d2d2d;
-  margin-bottom: 32px;
-  font-size: 50px;
+  margin-bottom: 3.2rem;
+  font-size: 5rem;
 
-  @include mq(pc) {
-    font-size: 90px;
+  @include mq() {
+    font-size: 9rem;
   }
 }
 
@@ -177,7 +178,6 @@
 
 .about__more {
   margin-bottom: 40px;
-  margin-left: auto;
 
   @include mq(pc) {
     margin-bottom: 0;
@@ -224,11 +224,10 @@
 
 // ---------- works ----------
 .works {
-  // background: #F7F7F7;
   padding-top: 100px;
   padding-bottom: 60px;
 
-  @include mq(pc) {
+  @include mq() {
     padding-top: 260px;
     padding-bottom: 150px;
   }
@@ -240,42 +239,43 @@
   display: flex;
   flex-direction: column;
 
-  @include mq(pc) {
-    max-width: 1400px;
-    padding-left: 215px;
-    padding-right: 215px;
+  @include mq() {
+    padding: $padding_pc;
+    max-width: $max-width_pc;
     margin: 0 auto;
-  }
-}
-
-.section-title__wrapper {
-  margin-bottom: 16px;
-
-  @include mq(pc) {
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    padding-top: 62px;
-    padding-bottom: 50px;
-    margin-bottom: 90px;
+    // display: initial;
   }
 }
 
 .works__title {
   text-indent: -3px;
-  margin-bottom: 12px;
+  margin-bottom: 2rem;
+  font-size: 5rem;
 
   @include mq(pc) {
-    margin-bottom: 16px;
-    font-size: 52px;
+    font-size: 9rem;
+    text-indent: 0px;
+  }
+}
+
+.works__top {
+  @include mq() {
+    display: flex;
+    gap: 5rem;
+    max-width: $max-width_pc;
+    margin: $margin-auto_pc;
+    margin-bottom: 12rem;
   }
 }
 
 .works__main-img {
   // margin-bottom: 42px;
   margin-bottom: 30px;
-  @include mq(pc) {
-    width: 62.5%;
+  @include mq() {
+    // width: 62.5%;
+    flex: 7;
     margin-bottom: 0;
+    // flex-basis: ;
   }
 }
 
@@ -286,6 +286,7 @@
   }
 
   @include mq(pc) {
+    flex: 1;
     line-height: 2;
     display: flex;
     align-items: center;
@@ -322,7 +323,39 @@
 //   }
 // }
 
-.works__product {
+.works__tt {
+  @include mq() {
+    // display: flex;
+    // flex-direction: row;
+    // gap: 8rem;
+    // background-color: rgb(255, 255, 195);
+  }
+}
+
+.works__t {
+  margin-bottom: 2rem;
+  @include mq() {
+    // display: flex;
+    // flex-direction: column;
+    // margin-bottom: 0;
+    // margin: 10rem;
+    // justify-content: flex-start;
+    // background-color: yellow;
+  }
+}
+
+.works__t2 {
+  @include mq() {
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    background-color: greenyellow;
+  }
+}
+
+
+
+.works__product__title {
   font-size: 1.3em;
   font-weight: 300;
   margin-bottom: 12px;
@@ -336,7 +369,10 @@
 .works__more {
   // margin-left: auto;
   // margin-bottom: 40px;
-  margin-left: auto;
+  // margin-left: auto;
+  @include mq() {
+    margin: 0;
+  }
 }
 
 // ---------- recruit-contact ----------
