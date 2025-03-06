@@ -47,8 +47,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .header {
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0);
+    height: 90px;
   }
 }
 
@@ -66,8 +65,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .header__company-info {
-    top: 4rem;
-    left: 5rem;
+    top: 1.3rem;
+    left: 2.5rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -80,7 +79,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .header__company-info .header__logo {
-    width: 8rem;
+    width: 7rem;
   }
 }
 .header__company-info .header__company-name {
@@ -110,10 +109,10 @@ button {
 }
 @media screen and (min-width: 768px) {
   .header__hum-btn {
-    width: 7rem;
-    top: 6rem;
-    right: 5.5rem;
-    gap: 1.5rem;
+    width: 5rem;
+    top: 3.2rem;
+    right: 3.7rem;
+    gap: 1.2rem;
   }
   .header__hum-btn:hover span:nth-of-type(1) {
     width: 90%;
@@ -343,12 +342,35 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .sub-page__title {
+    height: 38rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sub-page__title {
+    height: 30rem;
+  }
+}
+.sub-page__title .sub-page__title__container {
+  padding-left: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .sub-page__title .sub-page__title__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 120px;
+  }
 }
 .sub-page__title h1 {
-  font-size: 36px;
-  position: relative;
-  text-align: center;
+  font-size: 3.6rem;
+}
+@media screen and (min-width: 768px) {
+  .sub-page__title h1 {
+    font-size: 7rem;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .sub-page__title {
@@ -1464,10 +1486,12 @@ button {
 .works-page main {
   padding-top: 4rem;
   padding-bottom: 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .works-page p {
   text-align: justify;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02rem;
 }
 .works-page .works-page__txt {
   margin-bottom: 6.2rem;
@@ -1478,8 +1502,25 @@ button {
 .works-page .works-page__inner {
   padding: 0 3rem;
 }
+@media screen and (min-width: 768px) {
+  .works-page .works-page__inner {
+    padding: 0 12rem;
+  }
+}
 .works-page .wide-img {
   margin-bottom: 1.8rem;
+}
+@media screen and (min-width: 768px) {
+  .works-page .wide-img {
+    -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
 }
 .works-page .reversal-img {
   -webkit-transform: scale(-1, 1);
@@ -1494,7 +1535,6 @@ button {
   -webkit-filter: grayscale(30%);
           filter: grayscale(30%);
 }
-
 .contact_inner {
   padding-left: 30px;
   padding-right: 30px;

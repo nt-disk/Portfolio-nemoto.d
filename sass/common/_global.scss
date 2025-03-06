@@ -53,8 +53,8 @@ button {
   z-index: 150;
 
   @include mq() {
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0);
+    height: 90px;
+    // background-color: rgba(255, 255, 255, 0);
     // background-color: yellow;
     // padding: 120px 0;
   }
@@ -75,8 +75,8 @@ button {
   z-index: 5;
 
   @include mq() {
-    top: 4rem;
-    left: 5rem;
+    top: 1.3rem;
+    left: 2.5rem;
   }
 
   @include mq(pc-max) {
@@ -84,11 +84,10 @@ button {
   }
 
   .header__logo {
-    // 高さ位置調整
     width: 5.5rem;
 
     @include mq() {
-      width: 8rem;
+      width: 7rem;
     }
   }
 
@@ -114,10 +113,10 @@ button {
   gap: 1rem;
 
   @include mq() {
-    width: 7rem;
-    top: 6rem;
-    right: 5.5rem;
-    gap: 1.5rem;
+    width: 5rem;
+    top: 3.2rem;
+    right: 3.7rem;
+    gap: 1.2rem;
 
     &:hover {
       span:nth-of-type(1) {
@@ -308,14 +307,34 @@ button {
   height: 140px;
   display: flex;
   align-items: center;
-  // justify-content: center;
-  padding-left: 2rem;
+  // padding-left: 3rem;
+  @include mq(pc) {
+    height: 38rem;
+    // padding-left: 4rem;
+  }
+
+  @include mq(tb) {
+    height: 30rem;
+  }
+
+  .sub-page__title__container {
+  padding-left: 3rem;
+
+    @include mq() {
+
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 120px;
+    }
+  }
 
   h1 {
-    font-size: 36px;
-    position: relative;
-    // padding: 0.2em 0.8em;
-    text-align: center;
+    font-size: 3.6rem;
+
+    @include mq() {
+      font-size: 7rem;
+      width: 100%;
+    }
   }
 
   @include mq(pc) {
