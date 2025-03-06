@@ -367,16 +367,12 @@
   margin-bottom: 1.5rem;
   letter-spacing: .05em;
 
-  @include mq(tb) {
-    background-color: red;
-  }
   @include mq() {
     letter-spacing: $letter-spacing-base;
   }
 }
 
 .works__pic {
-  margin: 0 auto;
   margin-bottom: 2.5rem;
   @include mq() {
     margin: 0;
