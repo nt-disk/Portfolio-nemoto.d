@@ -2,13 +2,22 @@
 
 .about-page {
 
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
 // *************************** greeting ***************************
+  .about-page__title {
+    
+  }
+
   .greeting {
     padding-top: 6rem;
     padding-bottom: 12rem;
     @include mq(pc) {
-      padding-top: 170px;
-      padding-bottom: 100px;
+      padding-top: 17rem;
+      padding-bottom: 4rem;
     }
   }
 
@@ -28,25 +37,28 @@
   }
 
   .greeting__wrap {
-    @include mq(pc) {
+    @include mq() {
       display: flex;
-      gap: 108px;
-      justify-content: center;
+      flex-direction: column;
+      gap: 2.8rem;
+      justify-content: start;
     }
   }
 
   .greeting__txt {
-    margin-bottom: 14px;
+    margin-bottom: 1.4rem;
     text-align: justify;
     margin-bottom: 2.5rem;
     @include mq(pc) {
-      width: 518px;
-      line-height: 2.5;
+      line-height: $line-height-base;
     }
   }
 
   .signature {
     text-align-last: right;
+    @include mq() {
+      // text-align-last: left;
+    }
   }
 
   .section-line {
