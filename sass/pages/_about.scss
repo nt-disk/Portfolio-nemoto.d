@@ -4,12 +4,13 @@
 
   main {
     max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 
 // *************************** greeting ***************************
   .about-page__title {
-    
+
   }
 
   .greeting {
@@ -102,7 +103,7 @@
       display: flex;
       justify-content: center;
       gap: 70px;
-      padding-left: 50px;
+      // padding-left: 50px;
     }
   }
 

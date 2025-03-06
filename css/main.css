@@ -1198,6 +1198,7 @@ button {
 
 .about-page main {
   max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .about-page .greeting {
@@ -1301,7 +1302,6 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 70px;
-    padding-left: 50px;
   }
 }
 .about-page .company__contents--wrap {
@@ -1352,14 +1352,18 @@ button {
   font-weight: 300;
 }
 
+.recruit-page main {
+  max-width: 800px;
+  max-width: 90rem;
+  margin: 0 auto;
+}
 .recruit-page .recruit {
   padding-top: 60px;
   padding-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .recruit-page .recruit {
-    padding-top: 170px;
-    padding-bottom: 100px;
+    padding-top: 16rem;
   }
 }
 .recruit-page .recruit__inner {
@@ -1374,6 +1378,7 @@ button {
   padding-top: 32px;
   padding-bottom: 100px;
   font-size: 14px;
+  margin: 0 auto;
 }
 .recruit-page .job-description__inner {
   padding-left: 30px;
@@ -1410,8 +1415,16 @@ button {
 .recruit-page li, .recruit-page h3, .recruit-page h4 {
   font-weight: 300;
 }
-.recruit-page .plus-margin {
-  margin-bottom: 15px;
+.recruit-page .recruit__add-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .recruit-page .recruit__add-margin-bottom {
+    margin-bottom: 0.6rem;
+  }
+  .recruit-page .recruit__add-margin-bottom:nth-of-type(1) {
+    margin-bottom: 0;
+  }
 }
 .recruit-page .qa {
   padding-top: 100px;
