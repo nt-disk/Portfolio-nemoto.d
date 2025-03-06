@@ -415,6 +415,7 @@ button {
   min-width: 254px;
   max-width: 500px;
   margin-bottom: 32px;
+  margin-bottom: 1.8rem;
 
   @include mq() {
     border: 8px solid #fff;
