@@ -206,11 +206,8 @@
 }
 
 .about__img {
-  filter: grayscale(100%);
+  filter: grayscale(95%);
   transition: 0.8s ease-in-out;
-  &:hover {
-    filter: grayscale(0%);
-  }
 
   img {
     max-width: 100%;

@@ -757,14 +757,10 @@ button {
 }
 
 .about__img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(95%);
+          filter: grayscale(95%);
   -webkit-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
-}
-.about__img:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
 }
 .about__img img {
   max-width: 100%;
