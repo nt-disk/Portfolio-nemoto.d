@@ -41,7 +41,7 @@ body {
 }
 
 button {
-  color: #000;
+  color: #2d2e2f;
 }
 
 // *************************** header ***************************
@@ -54,17 +54,8 @@ button {
 
   @include mq() {
     height: 90px;
-    // background-color: rgba(255, 255, 255, 0);
-    // background-color: yellow;
-    // padding: 120px 0;
   }
 }
-
-// .header__container {
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-// }
 
 .header__company-info {
   display: flex;
@@ -176,6 +167,9 @@ button {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.94);
+  @include mq() {
+  height: calc(100vh - 90px);
+  }
 }
 
 // ハンバーガーメニューが押されるとopenが付与され、以下のスタイルがあたる
@@ -195,20 +189,17 @@ button {
   justify-content: center;
 
   @include mq(pc) {
-    position: relative; //閉じるボタンの位置指定のため
-    flex-direction: row;
-    width: calc(100% - 120px);
-    height: calc(100% - 120px);
+    width: calc(100% - 90px);
+    // height: calc(100% - 90px);
     align-items: center;
     justify-content: space-between;
     padding: 60px;
     gap: 30px;
-    // border-radius: 15px;
   }
 
   @include mq(pc-max) {
     justify-content: center;
-    gap: 120px;
+    // gap: 120px;
   }
 }
 
@@ -269,7 +260,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 2.4rem;
   margin-bottom: 40px;
 }
 
@@ -283,22 +274,15 @@ button {
     padding: 1rem;
 
     @include mq(pc) {
-      font-size: 20px;
+      font-size: 2.8rem;
       padding: 10px;
     }
   }
 }
 
 .nav__close-btn {
-  border-radius: 2rem;
-  border: 0.5px solid;
-  background: #ffffffb0;
-  box-shadow: 0 0.5em 0.5em -0.4em #bbbbba;
-  width: 40%;
-  text-align: center;
-  /* padding-top: 8px; */
-  padding: 0.5rem;
-  padding-top: 0.3rem;
+  font-weight: $weight-base;
+  padding: 1.5rem 2rem;
 }
 
 // *************************** サブページタイトル ***************************
