@@ -1,0 +1,42 @@
+@use "../common/helper" as *;
+
+.privacy-policy-page {
+
+  main {
+    letter-spacing: 0.03em;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .privacy-policy__inner {
+    padding: $padding_sp;
+  }
+
+  .p-p__intro {
+    padding: 3.2rem 0;
+  }
+
+  .p-p__txt {
+  }
+
+  .p-p__wrapper {
+    margin-bottom: 3.2rem;
+  }
+
+  .p-p__ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  .p-p__ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+
+  li {
+    font-weight: 300;
+  }
+}
