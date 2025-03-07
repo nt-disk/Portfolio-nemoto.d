@@ -523,3 +523,7 @@ button {
   padding: 0.25em 0.5em;
   border-left: solid 5px rgb(119, 119, 118);
 }
+
+.grayscale {
+  filter: grayscale(50%);
+}
