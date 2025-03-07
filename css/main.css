@@ -10,7 +10,7 @@ body {
   color: #333;
   font-family: "Noto Sans JP", sans-serif;
   background-color: #ffffff;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 }
 @media screen and (min-width: 768px) {
   body {
@@ -916,7 +916,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .works__txt {
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -1554,7 +1554,43 @@ button {
   -webkit-filter: grayscale(30%);
           filter: grayscale(30%);
 }
-.contact_inner {
-  padding-left: 30px;
-  padding-right: 30px;
+.contact-page .contact_inner {
+  padding: 0 3rem;
+}
+.contact-page .contact__intro {
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  text-align: justify;
+}
+.contact-page form {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+.contact-page dl {
+  margin-bottom: 2rem;
+}
+.contact-page dt {
+  font-weight: 400;
+}
+.contact-page dt span {
+  color: rgb(210, 48, 48);
+  font-weight: 500;
+  padding-left: 1.2rem;
+}
+.contact-page input,
+.contact-page textarea {
+  width: 100%;
+  border: solid 1px rgb(179, 179, 184);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background-color: rgb(237, 239, 240);
+}
+.contact-page .form-btn {
+  border: solid 1px rgb(179, 179, 184);
+  border-radius: 0.4rem;
+  background-color: rgb(56, 57, 62);
+  color: white;
+  padding: 1rem;
+  width: 200px;
+  font-weight: 300;
 }

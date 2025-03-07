@@ -30,13 +30,12 @@
     rel="stylesheet">
   <link rel="icon" href="/img/logo.webp">
   <link rel="stylesheet" href="./css/reset.css">
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQueryの読み込み -->
 
 </head>
 
-<body>
+<body class="contact-page">
   <!-- ******************************* header ******************************* -->
   <header class="header">
     <div class="header__container">
@@ -77,15 +76,31 @@
       <h1>Contact</h1>
     </div>
   </div>
-  <!-- ***************** 【おためし】Noway Form ***************** -->
-  <!-- <section>
+  <main>
     <div class="contact_inner">
-      <iframe style="border:none;width:100%;" height="400px"
-        src="https://www.noway-form.com/f/ba978380-6baf-43ca-9ad3-5040c98e4d71/embed" />
+      <div class="contact__intro">
+        <p>田里興業にご関心をお寄せいただき、誠にありがとうございます。左官工事に関するご相談、ご依頼、またはお見積もりのご希望がございましたら、お気軽にお問い合わせください。</p>
+      </div>
+      <form action="submit.php" method="post">
+        <dl>
+          <dt><label for="name">お名前<span>[必須]</span></label></dt>
+          <dd><input type="text" id="name" name="name" placeholder="" required></dd>
+          <dt><label for="name">お名前(カナ)<span>[必須]</span></label></dt>
+          <dd><input type="text" id="name-read" name="name-read" placeholder="" required></dd>
+          <dt><label for="name">企業名(法人の場合)</label></dt>
+          <dd><input type="text" id="company-name" name="company-name" placeholder="" required></dd>
+          <dt><label for="email">メールアドレス<span>[必須]</span></label></dt>
+          <dd><input type="email" id="email" name="email" placeholder="tasato@gmail.com" required></dd>
+          <dt><label for="email">電話番号</label></dt>
+          <dd><input type="number" id="tel-number" name="tel-number" placeholder="000-0000-0000" required></dd>
+          <dt><label for="message">お問い合わせ内容<span>[必須]</span></label></dt>
+          <dd><textarea id="message" name="message" rows="4" placeholder="(例)お問い合わせ内容を入力してください。" required></textarea></dd>
+        </dl>
+        <button class="form-btn" type="submit">送信</button>
+      </form>
     </div>
-  </section> -->
-
-  <!-- ******************************* footer ******************************* -->
+  </main>
+  <!-- ************ footer ************ -->
   <footer class="footer">
     <ul class="footer__ul">
       <li class="footer__li"><a href="./privacy-policy.html">Privacy Policy</a></li>
