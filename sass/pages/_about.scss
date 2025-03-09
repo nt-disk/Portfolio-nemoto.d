@@ -9,10 +9,6 @@
   }
 
 // *************************** greeting ***************************
-  .about-page__title {
-
-  }
-
   .greeting {
     padding-top: 6rem;
     padding-bottom: 12rem;
@@ -27,8 +23,8 @@
     padding-right: 30px;
 
     @include mq(pc) {
-      padding-left: 60px;
-      padding-right: 60px;
+      // padding-left: 60px;
+      // padding-right: 60px;
       padding-bottom: 80px;
     }
   }
@@ -164,7 +160,7 @@
   }
 
 
-
+  
 
 
 

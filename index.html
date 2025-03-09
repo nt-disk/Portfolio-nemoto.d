@@ -67,7 +67,7 @@
             <li class="nav-item"><a href="./contact.html">Contact</a></li>
           </ul>
         </div>
-        <button class="nav__close-btn btn__close-trigger">戻る</button>
+        <button class="btn btn-white btn__close-trigger">back</button>
       </div>
     </nav><!-- ナビここまで -->
     <!-- トップイメージ -->
@@ -85,7 +85,6 @@
         <div class="about__inner">
           <div class="about__wrapper">
             <div class="about__contents">
-              <!-- titleのクラスのスタイルは、読み込みmain.scssの読み込み順の結果、about__titleが優先される -->
               <p class="section__title__up about__title__up fadeUpTrigger">わたしたちについて</p>
               <h2 class="about__title section-title fadeUpTrigger">ABOUT</h2>
               <p class="about__description fadeUpTrigger">
@@ -93,26 +92,23 @@
                 職人の手仕事による技術の高さは<br>
                 現代社会において貴重な<span class="about__description-highlight">財産</span>です。
               </p>
-              <p class="about__text fadeUpTrigger">
+              <p class="about__txt fadeUpTrigger">
                 弊社では仕上がりの美しさと品質をいちばんに考え、
                 作り手の想いが伝わる仕事を心がけております。
-                <!-- <br> -->
                 また左官工事のクリエイティブな魅力を若い世代に継承すべく、人材育成に注力いたします。
                 <br>
-                <!-- <br> -->
                 田里興業は伝統の工法と最新技術を織り交ぜ、
                 左官業界の更なる発展に向けて
                 日々努力を積み重ねております。
               </p>
-              <div class="button-more about__more fadeUpTrigger">
-                <a href="./about.html" class="button-more__link">
-                  <span class="button-more__text">詳しく見る</span>
-                  <span class="button-more__arrow">→</span>
+              <div class="btn btn-black about__btn fadeUpTrigger">
+                <a href="./recruit.html" class="btn__link-test">
+                  View more
                 </a>
               </div>
             </div>
             <div class="about__img fadeUpTrigger">
-              <img src="./img/AdobeStock_350061307_Preview 2.webp" alt="about画像">
+              <img src="./img/sitaji-02.webp" alt="about画像">
             </div>
           </div>
         </div><!-- aboutインナー -->
@@ -121,10 +117,12 @@
       <section class="works">
         <div class="works__inner">
           <div class="fadeUpTrigger">
-            <p class="section__title__up">施工事例</p>
-            <h2 class="works__title section-title">
-              Works
-            </h2>
+            <div class="works__title__wrap">
+              <p class="section__title__up works-section__title__up">施工事例</p>
+              <h2 class="works__title section-title">
+                Works
+              </h2>
+            </div>
           </div>
         </div>
         <div class="works__top">
@@ -143,9 +141,9 @@
         <div class="works__inner works__tt">
 
           <div class="works__t fadeUpTrigger">
-            <h3 class="works__product__title deco-title">施工事例：ジョリパッド</h3>
+            <h3 class="deco-title">施工事例：ジョリパッド</h3>
             <div class="works__pic pic-f">
-              <div class="pic-f__img grayscale">
+              <div class="grayscale">
                 <img src="./img/top-joripad.webp" alt="ジョリパッド画像">
               </div>
             </div>
@@ -158,51 +156,44 @@
           </div>
         </div> <!-- works__inner works__tt -->
         <div class="works__inner">
-          <div class="button-more works__more fadeUpTrigger">
-            <a href="./works.html" class="button-more__link">
-              <span class="button-more__text">詳しく見る</span>
-              <span class="button-more__arrow">→</span>
+          <div class="btn btn-white works__more fadeUpTrigger">
+            <a href="./works.html">
+              View more
             </a>
           </div>
         </div>
       </section>
-      <!-- *********************** recruit-contact *********************** -->
-      <section class="recruit-contact">
-        <div class="recruit-contact__inner">
-          <div class="recruit-contact__wrapper1"><!-- r-c 左のボックス -->
+      <!-- *********************** r-c *********************** -->
+      <section class="r-c">
+        <div class="r-c__inner">
+          <div class="r-c__wrapper2"><!-- r-c 左のボックス -->
             <div class="recruit__title--wrapper fadeUpTrigger">
               <h2 class="recruit__title section-title">
                 Recruit
               </h2>
             </div>
-            <div class="recruit__text--contents">
+            <div class="contact__wrapper">
               <p class="recruit__description fadeUpTrigger">
                 一緒にはたらく仲間を<br>募集しています。
               </p>
-              <p class="recruit__txt fadeUpTrigger">
-                <!-- 詳細は募集要項をご覧ください -->
-              </p>
-              <div class="button-more fadeUpTrigger">
-                <a href="./recruit.html" class="button-more__link">
-                  <span class="button-more__text">募集要項</span>
-                  <span class="button-more__arrow">→</span>
-                </a>
-              </div>
+            </div>
+            <div class="contact__more btn btn-black fadeUpTrigger">
+              <a href="./recruit.html">
+                View more
+              </a>
             </div>
           </div>
-          <div class="recruit-contact__wrapper2 pc-line"> <!-- r-c 右のボックス -->
+          <div class="r-c__wrapper2 pc-line"> <!-- r-c 右のボックス -->
             <div class="contact__title--wrapper fadeUpTrigger">
               <h2 class="contact__title section-title">Contact</h2>
             </div>
             <div class="contact__wrapper">
-              <p class="contact__route fadeUpTrigger">tel. 03-3733-2751</p>
-              <p class="contact__route fadeUpTrigger">fax. 03-3733-2752</p>
-              <!-- <p class="contact__route fadeUpTrigger">mail. tasato-kogyo@ark.ocn.ne.jp</p> -->
+              <p class="contact__info fadeUpTrigger">tel. 03-3733-2751</p>
+              <p class="contact__info fadeUpTrigger">fax. 03-3733-2752</p>
             </div>
-            <div class="contact__more button-more fadeUpTrigger">
-              <a href="./contact.html" class="button-more__link">
-                <span class="button-more__text">お問い合わせ</span>
-                <span class="button-more__arrow">→</span>
+            <div class="contact__more btn btn-black fadeUpTrigger">
+              <a href="./contact.html" class="btn__link">
+                View more
               </a>
             </div>
           </div>

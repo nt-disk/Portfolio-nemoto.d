@@ -48,6 +48,8 @@ button {
 .header {
   height: 65px;
   background-color: $background-base;
+  // background-color: rgb(28, 28, 28);
+  // color: white;
   position: sticky;
   top: 0;
   z-index: 150;
@@ -122,6 +124,20 @@ button {
     }
   }
 
+  span {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    // background-color: whitesmoke;
+    display: block;
+    transition: width 0.3s;
+
+    @include mq() {
+      height: 2px;
+      background-color: rgb(78, 78, 78);
+    }
+  }
+
   // 疑似要素でタッチ範囲を広げる
   &::before {
     content: "";
@@ -132,22 +148,30 @@ button {
     height: 50px;
   }
 
-  span {
-    width: 100%;
-    height: 1px;
-    background-color: #000;
-    display: block;
-    transition: width 0.3s;
-
-    @include mq() {
-      height: 2px;
-      background-color: #515151;
-    }
-  }
-
   @include mq(pc-max) {
     right: 9rem;
   }
+}
+
+
+// btn ボタン button
+.btn {
+  padding: 10px 20px;
+  font-family: "shippori Mincho";
+  padding: 12.5px 0 10.5px;
+  width: 200px;
+  text-align: center;
+  border-radius: 48px;
+}
+
+.btn-white {
+  color: rgb(28, 28, 28);
+  background-color: white;
+}
+
+.btn-black {
+  color: white;
+  background-color: rgb(28, 28, 28);
 }
 
 /*=============================
@@ -167,8 +191,9 @@ button {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.94);
+  background-color: rgb(28, 28, 28);
   @include mq() {
-  height: calc(100vh - 90px);
+    height: calc(100vh - 90px);
   }
 }
 
@@ -181,6 +206,7 @@ button {
 
 .nav__container {
   background-color: rgb(242, 241, 241);
+  background-color: rgb(28, 28, 28);
   display: flex;
   width: calc(100% - 40px);
   height: calc(100% - 40px);
@@ -269,6 +295,7 @@ button {
   letter-spacing: 0.1em;
   a {
     color: #060606;
+    color: white;
     font-weight: 200;
     font-size: 18px;
     padding: 1rem;
@@ -281,14 +308,15 @@ button {
 }
 
 .nav__close-btn {
-  font-weight: $weight-base;
-  padding: 1.5rem 2rem;
+
 }
 
 // *************************** サブページタイトル ***************************
 .sub-page__title {
   background-color: rgb(242, 241, 241);
-  height: 140px;
+  background-color: rgb(28, 28, 28);
+  color: white;
+  height: 22rem;
   display: flex;
   align-items: center;
   // padding-left: 3rem;
@@ -302,13 +330,13 @@ button {
   }
 
   .sub-page__title__container {
-  padding-left: 3rem;
+    padding-left: 3rem;
 
     @include mq() {
-
-    width: 1200px;
-    margin: 0 auto;
-    // padding: 0 120px;
+      width: 1200px;
+      width: 1100px;
+      margin: 0 auto;
+      // padding: 0 120px;
     }
   }
 
@@ -360,16 +388,6 @@ button {
   }
 }
 
-// *********************** sp-inner ***********************
-// .sp-inner {
-//   @include sp-inner() {
-
-//   }
-//   @include mq(pc) {
-//   }
-// }
-
-// *********************** sp-inner ***********************
 .picture-frame {
   width: 250px;
   height: 340px;
@@ -380,33 +398,6 @@ button {
   margin: 0 auto;
   position: relative;
   margin-bottom: 32px;
-
-  @include mq() {
-    // width: 500px;
-    // height: 680px;
-  }
-}
-
-.picture-frame__nested-frame {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-
-  @include mq() {
-    // top: 10px;
-    // left: 10px;
-  }
-}
-
-.picture-frame__img {
-  width: 240px;
-  height: 160px;
-  flex-shrink: 0;
-
-  @include mq() {
-    // width: 480px;
-    // height: 320px;
-  }
 }
 
 // あたらしい写真フレーム
@@ -423,10 +414,6 @@ button {
   @include mq() {
     border: 8px solid #fff;
   }
-
-  // .pic-f__img {
-
-  // }
 
   .img01 {
     margin-bottom: 5px;
@@ -506,8 +493,13 @@ button {
 .deco-title {
   padding: 0.25em 0.5em;
   border-left: solid 5px rgb(119, 119, 118);
+  font-size: 1.3em;
+  font-weight: 100;
+  margin-bottom: 1.6rem;
 }
 
 .grayscale {
   filter: grayscale(50%);
 }
+
+

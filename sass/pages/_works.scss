@@ -29,14 +29,18 @@
     }
   }
 
+  .deco-title {
+    font-weight: 300;
+  }
+
   .wide-img {
     margin-bottom: 1.8rem;
     @include mq() {
       // border: 8px solid #fff;
       box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 10px rgba(0,0,0,.3);
-      width: 80%;
-      height: 80%;
+      width: 50%;
+      // height: 80%;
       margin: 0 auto;
       margin-bottom: 2rem;
     }
