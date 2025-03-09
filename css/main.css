@@ -672,6 +672,11 @@ button {
         -ms-flex: 1;
             flex: 1;
   }
+  .about__wrapper .about__img {
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+  }
 }
 
 .about__title__up {
