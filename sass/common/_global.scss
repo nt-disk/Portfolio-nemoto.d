@@ -156,9 +156,11 @@ button {
 
 // btn ボタン button
 .btn {
-  padding: 10px 20px;
+  a {
+    display: block;
+    padding: 12.5px 0 10.5px;
+  }
   font-family: "shippori Mincho";
-  padding: 12.5px 0 10.5px;
   width: 200px;
   text-align: center;
   border-radius: 48px;
@@ -172,6 +174,11 @@ button {
 .btn-black {
   color: white;
   background-color: rgb(28, 28, 28);
+}
+
+.btn-close {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*=============================
