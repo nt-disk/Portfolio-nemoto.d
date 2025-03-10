@@ -166,11 +166,29 @@ button {
 .btn-white {
   color: rgb(28, 28, 28);
   background-color: white;
+  border: 1px solid white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-white:hover {
+  background-color: rgb(28, 28, 28);
+  color: white;
+  -webkit-box-shadow: 0 0 10px rgba(255, 254, 254, 0.3);
+          box-shadow: 0 0 10px rgba(255, 254, 254, 0.3);
 }
 
 .btn-black {
   color: white;
   background-color: rgb(28, 28, 28);
+  border: 1px solid rgb(28, 28, 28);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-black:hover {
+  background-color: white;
+  color: rgb(28, 28, 28);
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .btn-close {
@@ -1611,6 +1629,7 @@ button {
 .contact-page .form-btn {
   display: block;
   margin: 0 auto;
+  padding: 12.5px 0 10.5px;
 }
 
 .privacy-policy-page main {
