@@ -34,13 +34,9 @@
     }
 
     img {
-      width: 14px;
-      height: 224px;
-
-      @include mq() {
-        width: 21px;
-        height: 336px;
-      }
+      width: 35%;
+      height: auto;
+      max-width: 40px;
     }
   }
 

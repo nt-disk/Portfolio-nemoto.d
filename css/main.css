@@ -611,14 +611,9 @@ button {
   }
 }
 .top .top__txt-img img {
-  width: 14px;
-  height: 224px;
-}
-@media screen and (min-width: 768px) {
-  .top .top__txt-img img {
-    width: 21px;
-    height: 336px;
-  }
+  width: 35%;
+  height: auto;
+  max-width: 40px;
 }
 .top .top__img {
   -webkit-box-flex: 8;
