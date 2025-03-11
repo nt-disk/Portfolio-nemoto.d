@@ -342,11 +342,32 @@ button {
   letter-spacing: 0.1em;
 }
 .nav-item a {
-  color: #060606;
   color: white;
   font-weight: 200;
   font-size: 18px;
   padding: 1rem;
+  position: relative;
+}
+.nav-item a::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  bottom: -1px; /*アンダーラインがaタグの下端から現れる*/
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1); /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+  -webkit-transform-origin: left top;
+          transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; /*変形の時間*/
+}
+.nav-item a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 @media screen and (min-width: 768px) {
   .nav-item a {
@@ -522,25 +543,31 @@ button {
 
 .footer__li a {
   display: inline-block;
-  padding-bottom: 1px;
+  padding: 1rem;
   position: relative;
   font-weight: 300;
   line-height: 1;
 }
 .footer__li a::after {
-  content: "";
-  bottom: 0;
-  display: block;
-  background-color: #000;
-  height: 1px;
-  left: 0;
   position: absolute;
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
-  width: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  background: #ffffff;
+  bottom: -1px; /*アンダーラインがaタグの下端から現れる*/
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1); /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+  -webkit-transform-origin: left top;
+          transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; /*変形の時間*/
 }
 .footer__li a:hover::after {
-  width: 100%;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 @media screen and (min-width: 768px) {
   .footer__li a {
