@@ -36,18 +36,20 @@
     img {
       width: 35%;
       height: auto;
-      max-width: 40px;
+      max-width: 30px;
+
+      @include mq() {
+        max-width: 40px;
+      }
     }
   }
 
   .top__img {
-    // margin-left: auto;
-    // display: flex;
-    // justify-content: flex-end;
     flex: 8;
     img {
       height: 420px;
       width: 316px;
+      width: auto;
       object-fit: cover;
       filter: grayscale(100%);
 
@@ -336,10 +338,9 @@
 .works__pic {
   margin-bottom: 2.5rem;
 
-  border: 3px solid #fff;
-  box-shadow: none;
+  border: none;
+  box-shadow: 1px 0px 13px 0px rgb(255 255 255 / 28%);
   @include mq() {
-    border: 5px solid #fff;
     margin: 0;
     margin-bottom: 3rem;
   }

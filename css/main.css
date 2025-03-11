@@ -613,7 +613,12 @@ button {
 .top .top__txt-img img {
   width: 35%;
   height: auto;
-  max-width: 40px;
+  max-width: 30px;
+}
+@media screen and (min-width: 768px) {
+  .top .top__txt-img img {
+    max-width: 40px;
+  }
 }
 .top .top__img {
   -webkit-box-flex: 8;
@@ -623,6 +628,7 @@ button {
 .top .top__img img {
   height: 420px;
   width: 316px;
+  width: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-filter: grayscale(100%);
@@ -915,13 +921,12 @@ button {
 
 .works__pic {
   margin-bottom: 2.5rem;
-  border: 3px solid #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  border: none;
+  -webkit-box-shadow: 1px 0px 13px 0px rgba(255, 255, 255, 0.28);
+          box-shadow: 1px 0px 13px 0px rgba(255, 255, 255, 0.28);
 }
 @media screen and (min-width: 768px) {
   .works__pic {
-    border: 5px solid #fff;
     margin: 0;
     margin-bottom: 3rem;
   }
