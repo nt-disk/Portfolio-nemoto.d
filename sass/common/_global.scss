@@ -238,18 +238,11 @@ button {
   align-items: center;
   justify-content: center;
 
-  @include mq(pc) {
+  @include mq() {
     width: calc(100% - 90px);
-    // height: calc(100% - 90px);
     align-items: center;
-    justify-content: space-between;
     padding: 60px;
     gap: 30px;
-  }
-
-  @include mq(pc-max) {
-    justify-content: center;
-    // gap: 120px;
   }
 }
 
